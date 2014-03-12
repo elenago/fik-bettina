@@ -3,18 +3,18 @@
     <div class="lang may col-lg-7">
       <?php
         if (has_nav_menu('language-menu')) :
-          wp_nav_menu(array('theme_location' => 'language-menu', 'menu_class' => 'nav nav-pills'));
+          wp_nav_menu(array('theme_location' => 'language-menu', 'menu_class' => 'nav nav-pills lang-menu pull-right'));
         endif;
       ?>
     </div>
     <div class="may col-lg-3">
       <?php
         if (has_nav_menu('blogshop-menu')) :
-          wp_nav_menu(array('theme_location' => 'blogshop-menu', 'menu_class' => 'nav nav-pills'));
+          wp_nav_menu(array('theme_location' => 'blogshop-menu', 'menu_class' => 'nav nav-pills blog-menu'));
         endif;
       ?>
     </div>
-    <div class="social pull-right col-lg-2">      
+    <div class="social col-lg-2">      
       <?php
         if (has_nav_menu('social-menu')) :
           wp_nav_menu(array('theme_location' => 'social-menu', 'menu_class' => 'nav nav-pills'));

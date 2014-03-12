@@ -15,7 +15,7 @@ p{
 }
 .banner-bettina{
 	background: red;
-	padding: 15px;
+	padding: 0 15px 15px 15px;
 	font-size: 12px;
 }
 .lang{
@@ -36,4 +36,66 @@ p{
 .brand{
 	text-align: right;
 }
+.lang .lang-menu a{
+	padding-left: 5px;
+}
+.lang .lang-menu a:hover{
+	color: #A5152B;
+	padding-left: 5px;
+	background: transparent;
+}
+.blog-menu li a{
+	background: transparent;
+}
+/*SOCIAL*/
+.social{
+	padding-top: 7px;
+	float: right;
+	width: 140px;
+}
+.social li{
+	width: 20px;
+}
+.social li a{
+	background:url('../img/bg-social.png') scroll no-repeat 0 0 transparent;
+	max-height: 22px;
+	text-indent: -99000px;
+	overflow: hidden;
+}
+.social li a:hover{	
+	background:url('../img/bg-social.png') scroll no-repeat 0 0 transparent;
+	height: 22px;
+	border-radius: 0;
+}
+.social .face a{
+	background-position:-2px 0;
+}
+.social .twitter a{
+	background-position:-24px 0;
+}
+.social .instagram a{
+	background-position:-46px 0;
+}
+.social .pinterest a{
+	background-position:-67px 0;
+}
+.social .gplus a{
+	background-position:-88px 0;
+}
 
+
+.social .face a:hover{
+	background-position:-2px -23px;
+}
+.social .twitter a:hover{
+	background-position:-24px -23px ;
+}
+.social .instagram a:hover{
+	background-position:-46px -23px;
+}
+.social .pinterest a:hover{
+	background-position:-67px -23px;
+}
+.social .gplus a:hover{
+	background-position:-88px -23px;
+}
