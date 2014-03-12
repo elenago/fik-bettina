@@ -18,10 +18,14 @@
       </main><!-- /.main -->
       <?php if (roots_display_sidebar()) : ?>
         <div class="sidebar <?php echo roots_sidebar_class(); ?>">
-          <?php include roots_sidebar_path(); ?>
+        <?php
+          if (has_nav_menu('primary_navigation')) :
+            wp_nav_menu(array('theme_location' => 'primary_navigation', 'menu_class' => 'nav nav-pills'));
+          endif;
+        ?>
         </div><!-- /.sidebar -->
         <aside role="complementary">
-          <?php include roots_sidebar_infomenu_path(); ?>
+          <?php include roots_sidebar_path(); ?>
         </aside><!-- /.sidebar -->
       <?php endif; ?>
     </div><!-- /.content -->

@@ -13,10 +13,6 @@ function roots_sidebar_path() {
   return new Roots_Wrapping('templates/sidebar.php');
 }
 
-function roots_sidebar_infomenu_path() {
-  return new Roots_Wrapping('templates/sidebar-infomenu.php');
-}
-
 class Roots_Wrapping {
   // Stores the full path to the main template file
   static $main_template;
