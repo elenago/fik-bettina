@@ -7,6 +7,13 @@ body *{
 p{
 	color: #19161B;
 }
+li{
+	list-style: none;
+}
+a:hover, a:active{
+	text-decoration: none;
+}
+
 .rojo-logo{
 	color: #A5152B;
 }
@@ -14,38 +21,51 @@ p{
 	text-transform: uppercase;
 }
 .banner-bettina{
-	background: red;
+	/*background: red;*/
 	padding: 0 15px 15px 15px;
 	font-size: 12px;
 }
 .lang{
 	text-align: right;
 }
+.lang .lang-active a, .active a{
+	color: #A5152B;
+}
 .font-header-inf{
 	font-size: 14px;
 }
 .logo{
-	background: blue;
+	/*background: blue;*/
 }
 .description{
-	background: green;
+	line-height: 23px;
+	word-spacing: 3px;
+	letter-spacing: 3px;
+	font-weight: bold;
+	color: #19161B;
+	/*background: green;*/
 }
-.menus-header{
-	background: whitesmoke;
-}
+
 .brand{
 	text-align: right;
+	text-transform: uppercase;
 }
-.lang .lang-menu a{
+.cesta{
+	background:url('../img/cesta.png') scroll no-repeat right top transparent;
+    height: 26px;
+    padding-right: 30px;
+    padding-top: 8px;
+}
+.lang .lang-menu a, .blog .blog-menu li a{
 	padding-left: 5px;
 }
-.lang .lang-menu a:hover{
+.lang .lang-menu a:hover, .blog .blog-menu li a:hover{
 	color: #A5152B;
 	padding-left: 5px;
 	background: transparent;
 }
-.blog-menu li a{
-	background: transparent;
+.sblog{
+	color: #A5152B;
 }
 /*SOCIAL*/
 .social{
@@ -98,4 +118,104 @@ p{
 }
 .social .gplus a:hover{
 	background-position:-88px -23px;
+}
+
+/*SIDEBAR*/
+/*Menu primary*/
+.sidebar ul li{
+	width: 100%;
+	display: inline;
+}
+.sidebar li a{
+	text-align: right;
+}
+.sidebar > .nav{
+	text-transform: uppercase;
+}
+.nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus{
+	background: transparent;
+	color: #B6B7B8;
+	/*text-transform: uppercase;*/
+}
+
+
+a:hover, a:focus, .nav-pills > li.active > a:hover{
+	color: #A5152B;
+}
+.nav > li > a:hover, .nav > li > a:focus{
+	background-color: transparent;
+}
+.caret{
+	display: none;
+}
+
+.dropdown-menu{
+	box-shadow: none;
+    border: none;
+    position: relative;
+}
+.dropdown-menu > li > a{
+	text-transform: lowercase;
+	color: #B6B7B8;
+}
+.dropdown-menu > li > a:hover{
+	color: #A5152B;
+	background: none;
+}
+.dropdown-menu a:first-letter{
+	text-transform: uppercase;
+}
+
+.p-sidebar{
+	color: grey;
+	text-transform: uppercase;
+	margin: 13px 13px 0 0;
+}
+.m-sidebar{
+	margin-top: 50px;
+}
+
+.img-home{
+	width: 100%;
+}
+
+/*FOOTER*/
+.contact{
+	display: inline;
+	background:url('../img/mail.png') scroll no-repeat right 4px transparent;
+	padding-right: 19px;
+}
+.widget{
+	margin-top: 20px;
+	padding-right: 0;
+}
+.widget ul{
+	margin: 0;
+}
+.widget li{
+	text-align: right;
+}
+.widget .active a{
+	color: grey;
+}
+.widget .active a:hover{
+	color: #A5152B;
+}
+.copyright{
+	text-align: right;
+	padding-right: 0;
+}
+.copyright *{
+	color: #B6B7B8;
+}
+
+.menu li{
+	text-transform: uppercase;
+	display: inline;
+}
+.legal{
+	text-align: right;
+}
+.legal li a{
+	padding-left: 20px;
 }

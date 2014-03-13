@@ -14,7 +14,8 @@
   <div class="wrap container" role="document">
     <div class="content row">
     <main class="main <?php echo roots_main_class(); ?> <?php if(current_theme_supports('sidebar-left')) { echo 'pull-right';} ?>" role="main">
-        <?php include roots_template_path(); ?>
+        <img src="http://fikstores/wp-content/uploads/2014/03/homeimg.jpg" class="img-home">
+        <?php //include roots_template_path(); ?>
       </main><!-- /.main -->
       <?php if (roots_display_sidebar()) : ?>
         <div class="sidebar <?php echo roots_sidebar_class(); ?>">
@@ -23,11 +24,13 @@
             wp_nav_menu(array('theme_location' => 'primary_navigation', 'menu_class' => 'nav nav-pills'));
           endif;
         ?>
+          <aside class="m-sidebar" role="complementary">
+            <?php include roots_sidebar_path(); ?>
+          </aside><!-- /.sidebar -->
         </div><!-- /.sidebar -->
-        <aside role="complementary">
-          <?php include roots_sidebar_path(); ?>
-        </aside><!-- /.sidebar -->
+
       <?php endif; ?>
+
     </div><!-- /.content -->
   </div><!-- /.wrap -->
 
