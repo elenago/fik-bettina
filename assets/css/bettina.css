@@ -35,8 +35,8 @@ a:hover, a:active{
 .font-header-inf{
 	font-size: 14px;
 }
-.logo{
-	/*background: blue;*/
+.logobettina{
+	margin-left: 15px;
 }
 .description{
 	line-height: 23px;
@@ -44,7 +44,7 @@ a:hover, a:active{
 	letter-spacing: 3px;
 	font-weight: bold;
 	color: #19161B;
-	/*background: green;*/
+	text-align: right;
 }
 
 .brand{
@@ -93,10 +93,10 @@ a:hover, a:active{
 .social{
 	padding-top: 7px;
 	float: right;
-	width: 140px;
+	width: 150px;
 }
 .social li{
-	width: 20px;
+	width: 22px;
 }
 .social li a{
 	background:url('../img/bg-social.png') scroll no-repeat 0 0 transparent;
@@ -156,6 +156,11 @@ a:hover, a:active{
 }
 .sidebar > .nav{
 	text-transform: uppercase;
+	line-height: 14px;
+	font-size: 15px;
+}
+.sidebar .nav a{
+	font-size: 15px;
 }
 .nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus{
 	background: transparent;
@@ -167,8 +172,8 @@ a:hover, a:active{
 a:hover, a:focus, .nav-pills > li.active > a:hover{
 	color: #A5152B;
 }
-.nav>li>a{
-	/*padding-right: 6px;*/
+.sidebar .nav>li>a{
+   padding-right: 10px;
 }
 .nav > li > a:hover, .nav > li > a:focus{
 	background-color: transparent;
@@ -196,8 +201,9 @@ a:hover, a:focus, .nav-pills > li.active > a:hover{
 
 .p-sidebar{
 	color: grey;
+	font-size: 13px;
 	text-transform: uppercase;
-	margin: 13px 13px 0 0;
+	margin: 13px 10px 0 0;
 }
 .m-sidebar{
 	margin-top: 50px;
