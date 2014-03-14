@@ -10,6 +10,11 @@ p{
 li{
 	list-style: none;
 }
+h1{
+	font-size: 15px;
+	color: #A5152B;
+	text-transform: uppercase;
+}
 a:hover, a:active{
 	text-decoration: none;
 }
@@ -83,9 +88,6 @@ a:hover, a:active{
 	border: none;
 	padding-right: 8px;
 }
-.blog-menu{
-	margin-top: 10px;
-}
 .sblog{
 	color: #A5152B;
 }
@@ -147,6 +149,9 @@ a:hover, a:active{
 
 /*SIDEBAR*/
 /*Menu primary*/
+.sidebar{
+	margin-top: 18px;
+}
 .sidebar ul li{
 	width: 100%;
 	display: inline;
