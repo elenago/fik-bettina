@@ -14,8 +14,7 @@
   <div class="wrap container" role="document">
     <div class="content row">
     <main class="main <?php echo roots_main_class(); ?> <?php if(current_theme_supports('sidebar-left')) { echo 'pull-right';} ?>" role="main">
-        <img src="http://fikstores/wp-content/uploads/2014/03/homeimg.jpg" class="img-home">
-        <?php //include roots_template_path(); ?>
+         <?php include roots_template_path(); ?>
       </main><!-- /.main -->
       <?php if (roots_display_sidebar()) : ?>
         <div class="sidebar <?php echo roots_sidebar_class(); ?>">
