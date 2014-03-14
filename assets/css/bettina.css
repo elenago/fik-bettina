@@ -1,7 +1,7 @@
 /*CSS*/
 
 body *{
-	color: #B6B7B8;
+	color: #929292;
 	font-family: "Raleway";
 }
 p{
@@ -31,6 +31,7 @@ a:hover, a:active{
 .lang .lang-active a, .active a{
 	color: #A5152B;
 }
+
 .font-header-inf{
 	font-size: 14px;
 }
@@ -57,12 +58,33 @@ a:hover, a:active{
     padding-top: 8px;
 }
 .lang .lang-menu a, .blog .blog-menu li a{
-	padding-left: 5px;
+	padding: 0 7px;
+}
+.lang .lang-menu li{
+	border-right: 1px solid grey;
+	margin: 10px 0;
+    padding-bottom: 0;
+    padding-top: 0;
+    border-radius: 0;
+}
+.lang-menu li:last-child{
+	border:none;
 }
 .lang .lang-menu a:hover, .blog .blog-menu li a:hover{
 	color: #A5152B;
-	padding-left: 5px;
+	padding-left: 7px;
+	padding-right: 7px;
 	background: transparent;
+}
+.menu li{
+	border-left: 1px solid grey;
+}
+.menu li:first-child{
+	border: none;
+	padding-right: 8px;
+}
+.blog-menu{
+	margin-top: 10px;
 }
 .sblog{
 	color: #A5152B;
@@ -78,9 +100,12 @@ a:hover, a:active{
 }
 .social li a{
 	background:url('../img/bg-social.png') scroll no-repeat 0 0 transparent;
-	max-height: 22px;
 	text-indent: -99000px;
 	overflow: hidden;
+	background-position: -2px 0;
+    height: 22px;
+    padding: 0;
+    width: 22px;
 }
 .social li a:hover{	
 	background:url('../img/bg-social.png') scroll no-repeat 0 0 transparent;
@@ -91,16 +116,16 @@ a:hover, a:active{
 	background-position:-2px 0;
 }
 .social .twitter a{
-	background-position:-24px 0;
+	background-position:-23px 0;
 }
 .social .instagram a{
-	background-position:-46px 0;
+	background-position:-44px 0;
 }
 .social .pinterest a{
-	background-position:-67px 0;
+	background-position:-65px 0;
 }
 .social .gplus a{
-	background-position:-88px 0;
+	background-position:-86px 0;
 }
 
 
@@ -108,16 +133,16 @@ a:hover, a:active{
 	background-position:-2px -23px;
 }
 .social .twitter a:hover{
-	background-position:-24px -23px ;
+	background-position:-23px -23px ;
 }
 .social .instagram a:hover{
-	background-position:-46px -23px;
+	background-position:-44px -23px;
 }
 .social .pinterest a:hover{
-	background-position:-67px -23px;
+	background-position:-65px -23px;
 }
 .social .gplus a:hover{
-	background-position:-88px -23px;
+	background-position:-86px -23px;
 }
 
 /*SIDEBAR*/
@@ -134,13 +159,16 @@ a:hover, a:active{
 }
 .nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus{
 	background: transparent;
-	color: #B6B7B8;
+	color: #929292;
 	/*text-transform: uppercase;*/
 }
 
 
 a:hover, a:focus, .nav-pills > li.active > a:hover{
 	color: #A5152B;
+}
+.nav>li>a{
+	/*padding-right: 6px;*/
 }
 .nav > li > a:hover, .nav > li > a:focus{
 	background-color: transparent;
@@ -184,6 +212,7 @@ a:hover, a:focus, .nav-pills > li.active > a:hover{
 	display: inline;
 	background:url('../img/mail.png') scroll no-repeat right 4px transparent;
 	padding-right: 19px;
+	color: #929292;
 }
 .widget{
 	margin-top: 20px;
@@ -206,7 +235,7 @@ a:hover, a:focus, .nav-pills > li.active > a:hover{
 	padding-right: 0;
 }
 .copyright *{
-	color: #B6B7B8;
+	color: #D6D7D8;
 }
 
 .menu li{
@@ -217,5 +246,9 @@ a:hover, a:focus, .nav-pills > li.active > a:hover{
 	text-align: right;
 }
 .legal li a{
-	padding-left: 20px;
+	padding-left: 13px;
+}
+
+footer{
+	margin-bottom: 30px;
 }
