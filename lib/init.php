@@ -13,6 +13,7 @@ function roots_setup() {
     'language-menu' => __( 'Language Menu' ),
     'blogshop-menu' => __( 'Blog Shop Menu' ),
     'cart-menu' => __('Cart Menu'),
+    'info-menu' => __('Info Menu'),
   ));
 
   // Add post thumbnails (http://codex.wordpress.org/Post_Thumbnails)

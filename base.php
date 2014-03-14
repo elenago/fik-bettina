@@ -14,7 +14,9 @@
   <div class="wrap container" role="document">
     <div class="content row">
     <main class="main <?php echo roots_main_class(); ?> <?php if(current_theme_supports('sidebar-left')) { echo 'pull-right';} ?>" role="main">
+      <article class="col-sm-6 contentstatic">
          <?php include roots_template_path(); ?>
+      </article>
       </main><!-- /.main -->
       <?php if (roots_display_sidebar()) : ?>
         <div class="sidebar <?php echo roots_sidebar_class(); ?>">

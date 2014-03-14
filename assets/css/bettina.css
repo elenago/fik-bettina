@@ -5,6 +5,7 @@ body *{
 	font-family: "Raleway";
 }
 p{
+	font-size: 13px;
 	color: #19161B;
 }
 li{
@@ -87,6 +88,9 @@ a:hover, a:active{
 .menu li:first-child{
 	border: none;
 	padding-right: 8px;
+}
+.blog .blog-menu{
+	margin-top: 10px;
 }
 .sblog{
 	color: #A5152B;
@@ -180,6 +184,9 @@ a:hover, a:focus, .nav-pills > li.active > a:hover{
 .sidebar .nav>li>a{
    padding-right: 10px;
 }
+.nav >li >a{
+	padding: 10px 7px;
+}
 .nav > li > a:hover, .nav > li > a:focus{
 	background-color: transparent;
 }
@@ -209,6 +216,9 @@ a:hover, a:focus, .nav-pills > li.active > a:hover{
 	font-size: 13px;
 	text-transform: uppercase;
 	margin: 13px 10px 0 0;
+}
+.widget .menu li:first-child{
+	padding-right: 0;
 }
 .m-sidebar{
 	margin-top: 50px;
@@ -262,4 +272,22 @@ a:hover, a:focus, .nav-pills > li.active > a:hover{
 
 footer{
 	margin-bottom: 30px;
+}
+
+/*Páginas legal*/
+
+.page-header{
+	margin-top: 0;
+	padding: 0;
+	border: none;
+}
+.page-header h1{
+	margin-top: 26px;
+}
+.contentstatic{
+	padding-left: 0;
+}
+
+footer div > .widget{
+	padding-left: 3px;
 }
