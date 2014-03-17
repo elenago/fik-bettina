@@ -16,6 +16,10 @@ h1{
 	color: #A5152B;
 	text-transform: uppercase;
 }
+h2{
+	color: #A5152B;
+    font-size: 16px;
+}
 a:hover, a:active{
 	text-decoration: none;
 }
@@ -84,11 +88,14 @@ a:hover, a:active{
 }
 .menu li{
 	border-left: 1px solid grey;
+	width: 150px;
+	border: none;
 }
 .menu li:first-child{
 	border: none;
 	padding-right: 8px;
 }
+
 .blog .blog-menu{
 	margin-top: 10px;
 }
@@ -177,7 +184,9 @@ a:hover, a:active{
 	/*text-transform: uppercase;*/
 }
 
-
+.sidebar .menu li{
+	width: 150px;
+}
 a:hover, a:focus, .nav-pills > li.active > a:hover{
 	color: #A5152B;
 }
@@ -220,6 +229,7 @@ a:hover, a:focus, .nav-pills > li.active > a:hover{
 .widget .menu li:first-child{
 	padding-right: 0;
 }
+
 .m-sidebar{
 	margin-top: 50px;
 }
@@ -266,6 +276,15 @@ a:hover, a:focus, .nav-pills > li.active > a:hover{
 .legal{
 	text-align: right;
 }
+.legal li{
+	border-left: 1px solid grey;
+}
+.legal li:first-child{
+	border: none;
+}
+.legal li:first-child a{
+	padding-right: 7px;
+}
 .legal li a{
 	padding-left: 13px;
 }
@@ -290,4 +309,32 @@ footer{
 
 footer div > .widget{
 	padding-left: 3px;
+}
+/*Page info*/
+.no-padding{
+	padding: 0;
+}
+.info{
+	padding-left: 30px;
+}
+/*ERROR 404*/
+.perror{
+	font-size: 340px;
+    font-weight: lighter;
+    color: #d4d4d5;
+    margin-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    text-align: center;
+    line-height: 390px;
+}
+.msgerror{
+	font-size: 20px;
+    text-align: center;
+}
+.msgerrores{
+	color: #d4d4d5;
+}
+.msgerroren{
+	margin-bottom: 80px;
 }
