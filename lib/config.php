@@ -96,3 +96,7 @@ function roots_display_sidebar() {
  * Default: 1140px is the default Bootstrap container width.
  */
 if (!isset($content_width)) { $content_width = 1140; }
+
+function custom_excerpt_length( $length ) {
+      return 100;
+      }add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );

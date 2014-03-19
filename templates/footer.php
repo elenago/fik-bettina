@@ -5,7 +5,7 @@
     <div class="copyright col-lg-2 pull-right">
     	<p class="">&copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?></p>
     	<p class="pull-right">Diseño | FLUXOP</p>
-    <img src="http://fikstores/wp-content/uploads/2014/03/logofik.png" class="pull-right">
+    <div class="pull-right"><?php the_fikstores_badge(); ?></div>
     </div>
     <?php wp_footer(); ?>
   </div>
