@@ -244,6 +244,7 @@ a:hover, a:focus, .nav-pills > li.active > a:hover{
 	background:url('../img/mail.png') scroll no-repeat right 4px transparent;
 	padding-right: 19px;
 	color: #929292;
+	font-size: 14px;
 }
 .widget{
 	margin-top: 20px;
