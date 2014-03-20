@@ -28,7 +28,7 @@
   </div>
 
   <div class="row">
-     <div class="font-header-inf may description col-lg-7"><a href="#" class="logobettina pull-left"><img src="/wp-content/themes/fik-bettina/assets/img/logo.png"></a></div>
+     <div class="font-header-inf may description col-lg-7"><a href="<?php echo home_url('/') ?>" class="logobettina pull-left"><img src="/wp-content/themes/fik-bettina/assets/img/logo.png"></a></div>
    
     <!--<p >tu vestido.es</p>-->
    <!-- <div class="font-header-inf may logo col-lg-5"><a href="#" class="logobettina"><img src="http://fikstores/wp-content/uploads/2014/03/logo.png"></a></div>
