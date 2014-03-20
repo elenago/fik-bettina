@@ -1,13 +1,13 @@
 <header class="banner-bettina container" role="banner">
   <div class="header-sup row">
-    <div class="lang may col-sm-8">
+    <div class="lang may col-sm-7">
       <?php
         if (has_nav_menu('language-menu')) :
           wp_nav_menu(array('theme_location' => 'language-menu', 'menu_class' => 'nav nav-pills lang-menu pull-right'));
         endif;
       ?>
     </div>
-    <div class="may col-sm-2 no-padding">
+    <div class="may col-sm-3 no-padding">
       <?php
         if (has_nav_menu('blogshop-menu') || has_nav_menu('blogshop2-menu')) :
           if(is_single() || is_page('blog')) :

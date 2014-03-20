@@ -86,6 +86,12 @@ a:hover, a:active{
 	padding-right: 7px;
 	background: transparent;
 }
+.blog-menu li{
+	width: 100%;
+}
+.blog-menu li a{
+	text-align: right;
+}
 .menu li{
 	border-left: 1px solid grey;
 	width: 150px;
