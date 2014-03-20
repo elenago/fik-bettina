@@ -455,13 +455,15 @@ footer div > .widget{
     z-index: 10;
     background: transparent;
 }
+.btn-primary.disabled, .btn-primary[disabled], fieldset[disabled] .btn-primary, .btn-primary.disabled:hover, .btn-primary[disabled]:hover, fieldset[disabled] .btn-primary:hover, .btn-primary.disabled:focus, .btn-primary[disabled]:focus, fieldset[disabled] .btn-primary:focus, .btn-primary.disabled:active, .btn-primary[disabled]:active, fieldset[disabled] .btn-primary:active, .btn-primary.disabled.active, .btn-primary.active[disabled], fieldset[disabled] .btn-primary.active{
+	background: transparent;
+	left: 235px;
+    top: 61px;
+    border: none;
+}
 .product-gallery{
 	margin-top: -30px;
 }
 .product-gallery .entry-content{
 	margin-bottom: 20px;
-}
-.product-gallery img{
-	width: 100%;
-	height: 100%;
 }
