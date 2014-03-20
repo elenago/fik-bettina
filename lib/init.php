@@ -12,6 +12,7 @@ function roots_setup() {
     'social-menu' => __( 'Social Menu' ),
     'language-menu' => __( 'Language Menu' ),
     'blogshop-menu' => __( 'Blog Shop Menu' ),
+    'blogshop2-menu' => __( 'Blog Shop 2 Menu' ),
     'cart-menu' => __('Cart Menu'),
     'info-menu' => __('Info Menu'),
   ));
