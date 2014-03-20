@@ -10,7 +10,11 @@
     <div class="may col-sm-2 no-padding">
       <?php
         if (has_nav_menu('blogshop-menu')) :
-          wp_nav_menu(array('theme_location' => 'blogshop-menu', 'menu_class' => 'nav nav-pills blog-menu'));
+          if(is_single()) :
+            wp_nav_menu(array('theme_location' => 'blogshop-menu', 'menu_class' => 'nav nav-pills blog-menu'));
+          else :
+            //wp_nav_menu(array('theme_location' => 'blogshop-menu', 'menu_class' => 'nav nav-pills blog-menu'));
+          endif;
         endif;
       ?>
     </div>
