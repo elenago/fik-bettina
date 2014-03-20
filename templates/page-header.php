@@ -1,4 +1,4 @@
-<?php if(!is_home()): ?>
+<?php if(!is_page('Home')): ?>
 <div class="page-header">
   <h1>
     <?php echo roots_title(); ?>
