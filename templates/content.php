@@ -1,10 +1,12 @@
-<?php if(get_post_type == 'fik_product'): ?>
+<?php if(get_post_type == 'fik_product' || is_tax('store-section')): ?>
 
-    <li class="<?php echo get_theme_mod( 'fik_product_thumb_type', 'fik2012-thumb-sq' ); ?>" style="display: inline-block">
+    <div class="col-md-6 no-padding-left">
+        <div class="product-image-frame" style="margin-bottom: 50px">
         <?php the_post_thumbnail('450-thumbnail', array('class'=>'img-responsive')); ?>
-            <h2 class="product-title"><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></h2>
+        <h2 class="product-title" style="margin-top: 10px"><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></h2>
         <div class="product-price"><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_fik_price(); ?></a></div>
-    </li>
+        </div>
+    </div>
 
 <?php else: ?>
 

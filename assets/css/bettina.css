@@ -455,13 +455,17 @@ footer div > .widget{
     z-index: 10;
     background: transparent;
 }
+.thumbnails{
+	padding-left: 0;
+	margin-top: 20px;
+}
 .thumbnail{
 	border: none;
 	display: inline-block;
 }
 .btn-primary.disabled, .btn-primary[disabled], fieldset[disabled] .btn-primary, .btn-primary.disabled:hover, .btn-primary[disabled]:hover, fieldset[disabled] .btn-primary:hover, .btn-primary.disabled:focus, .btn-primary[disabled]:focus, fieldset[disabled] .btn-primary:focus, .btn-primary.disabled:active, .btn-primary[disabled]:active, fieldset[disabled] .btn-primary:active, .btn-primary.disabled.active, .btn-primary.active[disabled], fieldset[disabled] .btn-primary.active{
 	background: transparent;
-	left: 235px;
+	left: 215px;
     top: 61px;
     border: none;
 }
@@ -470,4 +474,23 @@ footer div > .widget{
 }
 .product-gallery .entry-content{
 	margin-bottom: 20px;
+}
+.product-image-frame{
+	position: relative;
+}
+.product-image-frame:hover .price{
+    background-color: rgba(165, 21, 43, 0.5);
+    color: #FFFFFF;
+    height: 200px;
+    top: 200px;
+    text-align: center;
+    padding-top: 150px;
+}
+.product-title{
+	margin-top: 10px;
+    position: absolute;
+    text-align: center;
+    top: 320px;
+    width: 100%;
+    z-index: 20;
 }
