@@ -13,7 +13,7 @@
           if(is_single() || is_page('blog')) :
             wp_nav_menu(array('theme_location' => 'blogshop-menu', 'menu_class' => 'nav nav-pills blog-menu'));
           else :
-            //wp_nav_menu(array('theme_location' => 'blogshop-menu', 'menu_class' => 'nav nav-pills blog-menu'));
+            wp_nav_menu(array('theme_location' => 'blogshop2-menu', 'menu_class' => 'nav nav-pills blog-menu'));
           endif;
         endif;
       ?>
