@@ -524,6 +524,9 @@ footer div > .widget{
 .product-price .price{
 	display: none;
 }
+.product-image-frame{
+	position: relative;
+}
 .product-image-frame:hover .product-price .price .amount, .product-title a{
 	display: inline;
 	color: white;
@@ -531,5 +534,5 @@ footer div > .widget{
 .product-image-frame:hover .product-title{
 	display: block;
 	z-index: 10;
-    bottom: 340px;
+    bottom: 290px;
 }
