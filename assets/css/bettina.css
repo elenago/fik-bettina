@@ -567,6 +567,9 @@ footer div > .widget{
     text-align: left;
     display: block;
 }
+.product-gallery .entry-content{
+	margin-bottom: 0;
+}
 .product-quantity{
 	width: 40%;
 }
