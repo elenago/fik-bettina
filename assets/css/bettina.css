@@ -20,6 +20,9 @@ h2{
 	color: #C10D27;
     font-size: 16px;
 }
+ol li{
+	list-style: decimal;
+}
 a:hover, a:active{
 	text-decoration: none;
 }
@@ -280,12 +283,12 @@ a:hover, a:focus, .nav-pills > li.active > a:hover{
 	text-transform: uppercase;
 	display: inline;
 }
+
 .legal{
 	text-align: right;
 }
 .legal li{
 	border-left: 1px solid grey;
-	list-style: decimal;
 	padding: 5px 0;
 }
 .legal li:first-child{
