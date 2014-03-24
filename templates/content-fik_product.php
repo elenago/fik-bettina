@@ -38,7 +38,7 @@
             </div><!-- .entry-content -->
             <div class="price-and-purchase">
 
-                <?php echo('<form action="" class="fik_add_cart" method="post" enctype="multipart/form-data"><input type="hidden" name="store_product_id">'
+                <?php echo('<form action="" class="fik_add_cart" method="post" enctype="multipart/form-data"><input type="hidden" name="store_product_id" value="' . esc_attr(get_the_ID()) . '">'
         . get_fik_product_select_variations() . get_fik_product_select_quantity() . get_add_to_cart_button() .
         '</form>'); ?>
                 <?php the_fik_price(); ?>
