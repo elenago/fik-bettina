@@ -33,7 +33,7 @@
     <!--<p >tu vestido.es</p>-->
    <!-- <div class="font-header-inf may logo col-lg-5"><a href="#" class="logobettina"><img src="http://fikstores/wp-content/uploads/2014/03/logo.png"></a></div>
     --><div class="menus-header col-lg-5">
-      <a class="pull-right brand cesta" href="<?php echo home_url('/') ?>">Cesta de compra</a>
+      <a class="pull-right brand cesta" href="http://www.tuvestido.es/cart/">Cesta de compra</a>
     </div>
 
   </div>

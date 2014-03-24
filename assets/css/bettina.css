@@ -505,7 +505,7 @@ footer div > .widget{
 .product-price{
 	position: relative;
 }
-.product-price .price, .product-title{
+.archive .product-price .price, .product-title{
 	display: none;
 }
 .product-image-frame:hover .product-price .price, .product-title{
@@ -531,8 +531,19 @@ footer div > .widget{
 	display: inline;
 	color: white;
 }
-.product-image-frame:hover .product-title{
+.archive .product-image-frame:hover .product-title{
 	display: block;
 	z-index: 10;
     bottom: 290px;
+}
+
+/*Producto*/
+.single .entry-content img{
+	float: left;
+}
+.thumbnails{
+	padding-left: 0;
+}
+.thumbnail img{
+	width: 100px;
 }
