@@ -511,7 +511,7 @@ footer div > .widget{
 .product-image-frame:hover .product-price .price, .product-title{
     position: absolute;
     width: 100%;
-    bottom: 280px;
+    bottom: 240px;
     color: white;
     text-align: center;
 }
@@ -531,5 +531,5 @@ footer div > .widget{
 .product-image-frame:hover .product-title{
 	display: block;
 	z-index: 10;
-	bottom: 380px;
+    bottom: 340px;
 }
