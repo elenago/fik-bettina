@@ -685,6 +685,6 @@ article.status-fik_checkout{
     width: 63px;
 }
 
-.anchomenu{
+.dropdown-menu > .anchomenu > a{
 	margin-left: -78px;
 }
