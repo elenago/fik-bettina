@@ -36,8 +36,8 @@
                 <?php the_product_gallery_thumbnails('150-thumbnail',array('class'=>'img-responsive')); ?>
                 <?php wp_link_pages( array( 'before' => '<div class="page-links">' . __( 'Pages:', 'twentytwelve' ), 'after' => '</div>' ) ); ?>
             </div><!-- .entry-content -->
-            <div class="msgproduct"><?php echo fik_messages(); ?></div>
             <div class="price-and-purchase">
+            <div class="msgproduct"><?php echo fik_messages(); ?></div>
 
                 <?php echo('<form action="" class="fik_add_cart" method="post" enctype="multipart/form-data"><input type="hidden" name="store_product_id" value="' . esc_attr(get_the_ID()) . '">'
         . get_fik_product_select_variations() . get_fik_product_select_quantity() . get_add_to_cart_button() .
