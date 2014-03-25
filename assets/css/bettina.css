@@ -193,7 +193,7 @@ a:hover, a:active{
 	font-size: 15px;
 }
 .nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus{
-	background: red;
+	background: transparent;
 	color: #929292;
 }
 
@@ -673,7 +673,6 @@ article.status-fik_checkout{
     display: inline-block;
     font-family: 'Raleway',sans-serif;
     font-size: 13px;
-    height: 48px;
     margin-bottom: 6px;
     margin-left: 0;
     margin-right: 0;
@@ -681,12 +680,9 @@ article.status-fik_checkout{
     outline-color: -moz-use-text-color;
     outline-style: none;
     outline-width: medium;
-    padding-bottom: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 10px;
+	padding: 0;
     text-transform: uppercase;
-    width: 223px;
+    width: 63px;
 }
 
 .anchomenu{
