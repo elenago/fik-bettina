@@ -573,3 +573,41 @@ footer div > .widget{
 .product-quantity{
 	width: 40%;
 }
+
+/*Cesta de la compra*/
+.table-striped *{
+	color: #6E7072;	
+	font-weight: normal;
+	border: none;	
+}
+.table-striped > tbody > tr:nth-child(2n+1) > td, .table-striped > tbody > tr:nth-child(2n+1) > th{
+	background: #fff;
+}
+.table > caption + thead > tr:first-child > th, .table > colgroup + thead > tr:first-child > th, .table > thead:first-child > tr:first-child > th, .table > caption + thead > tr:first-child > td, .table > colgroup + thead > tr:first-child > td, .table > thead:first-child > tr:first-child > td{
+	font-weight: normal;
+	color: #929292;	
+}
+.table > tbody > tr td strong{
+	text-transform: uppercase;
+}
+
+article.status-fik_checkout{
+	position: relative;
+}
+.status-fik_checkout .fik_to_checkout .button{
+	border-radius: 0;
+	width: 100%;
+	position: absolute;
+	left: 0;
+	text-align: right;
+	color: #6E7072;
+}
+.table > caption + thead > tr:first-child > th, .table > colgroup + thead > tr:first-child > th, .table > thead:first-child > tr:first-child > th, .table > caption + thead > tr:first-child > td, .table > colgroup + thead > tr:first-child > td, .table > thead:first-child > tr:first-child > td{
+	border:none;
+}
+.table > thead > tr > th{
+	border: none;
+}
+.table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td{
+	border-style: none;
+}
