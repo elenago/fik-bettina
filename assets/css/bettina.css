@@ -216,6 +216,9 @@ a:hover, a:focus, .nav-pills > li.active > a:hover{
 	display: none;
 }
 
+.dropdown-toggle{
+	background: transparent;
+}
 .dropdown-menu{
 	box-shadow: none;
     border: none;
@@ -234,7 +237,7 @@ a:hover, a:focus, .nav-pills > li.active > a:hover{
 }
 .dropdown-menu > .active > a{
 	background: transparent;
-	color: #B6B7B8;
+	color: #C10D27;
 }
 .dropdown-menu > .active > a:hover, .dropdown-menu > .active > a:focus{
 	background: transparent;
@@ -621,70 +624,46 @@ article.status-fik_checkout{
 .table-striped th:last-child, .table-striped td:last-child{
 	text-align: right;
 }
-
-.controls select {
-    -moz-appearance: none;
-    -moz-border-bottom-colors: none;
-    -moz-border-left-colors: none;
-    -moz-border-right-colors: none;
-    -moz-border-top-colors: none;
-    background-attachment: scroll;
-    background-clip: border-box;
-    background-color: #FFFFFF;
-    background-image: none;
-    background-origin: padding-box;
-    background-position: 0 0;
-    background-repeat: repeat;
-    background-size: auto auto;
-    border-bottom-color: #BEBEBE;
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0;
-    border-bottom-style: solid;
-    border-bottom-width: 1px;
-    border-image-outset: 0 0 0 0;
-    border-image-repeat: stretch stretch;
-    border-image-slice: 100% 100% 100% 100%;
-    border-image-source: none;
-    border-image-width: 1 1 1 1;
-    border-left-color-ltr-source: physical;
-    border-left-color-rtl-source: physical;
-    border-left-color-value: #BEBEBE;
-    border-left-style-ltr-source: physical;
-    border-left-style-rtl-source: physical;
-    border-left-style-value: solid;
-    border-left-width-ltr-source: physical;
-    border-left-width-rtl-source: physical;
-    border-left-width-value: 1px;
-    border-right-color-ltr-source: physical;
-    border-right-color-rtl-source: physical;
-    border-right-color-value: #BEBEBE;
-    border-right-style-ltr-source: physical;
-    border-right-style-rtl-source: physical;
-    border-right-style-value: solid;
-    border-right-width-ltr-source: physical;
-    border-right-width-rtl-source: physical;
-    border-right-width-value: 1px;
-    border-top-color: #BEBEBE;
-    border-top-left-radius: 0;
-    border-top-right-radius: 0;
-    border-top-style: solid;
-    border-top-width: 1px;
-    color: #58585B;
-    cursor: pointer;
-    display: inline-block;
-    font-family: 'Raleway',sans-serif;
-    font-size: 13px;
-    margin-bottom: 6px;
-    margin-left: 0;
-    margin-right: 0;
-    margin-top: 0;
-    outline-color: -moz-use-text-color;
-    outline-style: none;
-    outline-width: medium;
-	padding: 0;
-    text-transform: uppercase;
+.product-variations .controls{
+	position: relative;
 }
-
+.product-variations .controls #vv-tallas-vestidos{
+	text-transform: uppercase;
+	color: #585757;
+	padding: 0;
+	font-size: 13px;
+	line-height: 100%;
+	border: 1px solid #C1C1C1;
+	border-radius: 0;
+	height:20px;
+	-moz-appearance: none;
+}
+.product-variations .controls:after{
+	width: 30px;
+	height: 20px;
+	display: block;
+	content: '';
+	position: absolute;
+	top: 0;right: 0;
+	pointer-events: none;
+	border: 1px solid #C1C1C1;
+	background-image: url('../img/arrow.png');
+	background-image: url('../img/arrow.png'), -moz-linear-gradient(top,#fff 0%,#fff 100%);
+	background-image: url('../img/arrow.png'), -webkit-gradient(linear,left top,left bottom,color-stop(0%,#fff),color-stop(100%,#fff));
+	background-image: url('../img/arrow.png'), -webkit-linear-gradient(top,#fff 0%,#fff 100%);
+	background-image: url('../img/arrow.png'), -o-linear-gradient(top,#fff 0%,#fff 100%);
+	background-image: url('../img/arrow.png'), -ms-linear-gradient(top,#fff 0%,#fff 100%);
+	background-image: url('../img/arrow.png'), linear-gradient(top,#fff 0%,#fff 100%);
+	background-repeat: no-repeat;
+	background-position: center center;
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box; /* Firefox, other Gecko */
+	box-sizing: border-box; 
+}
+.table-striped .input-mini{
+	border: 1px solid #6E707B;
+	width: 50px; 
+}
 .dropdown-menu > .anchomenu > a{
 	margin-left: -78px;
 }
