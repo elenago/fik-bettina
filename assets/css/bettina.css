@@ -210,14 +210,15 @@ a:hover, a:focus, .nav-pills > li.active > a:hover{
 	padding: 10px 7px;
 }
 .nav > li > a:hover, .nav > li > a:focus{
-	background-color: transparent;
+	background-color: white;
 }
+
 .caret{
 	display: none;
 }
 
-.dropdown-toggle{
-	background: transparent;
+.dropdown .dropdown-toggle{
+	background: white;
 }
 .dropdown-menu{
 	box-shadow: none;
@@ -662,8 +663,91 @@ article.status-fik_checkout{
 }
 .table-striped .input-mini{
 	border: 1px solid #6E707B;
-	width: 50px; 
+	width: 50px;
 }
 .dropdown-menu > .anchomenu > a{
 	margin-left: -78px;
+}
+
+/*MEDIA QUERIES*/
+
+@media screen and (min-width: 688px) and (max-width: 1000px){
+ 	.banner-bettina .social{
+ 		width: 16%;
+ 		padding: 16px 0 0 0;
+ 	}
+ 	article.contentstatic{
+ 		width: 100%;
+ 	}
+ 	.social{
+		margin-right: 10px;
+	}
+}
+
+@media screen and (max-width: 780px){
+
+	.sidebar .menu > li > a, .nav-pills.blog-menu > li > a,.sidebar .nav-pills > li > a, .nav-pills > li > a:hover, .nav-pills > li > a:focus, .nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus, .nav-pills li > a.dropdown-toggle{
+		background: #f6f6f6;
+		color: #929292;
+		text-align: center;
+				border-radius: 0;
+
+	}
+	.sidebar .nav-pills li{
+		margin-left: 0;
+	}
+	.sidebar .nav-pills .dropdown-menu{
+		width: 100%;
+	}
+	.sidebar .nav-pills .dropdown-menu > .active > a{
+		text-align: center;
+		color: #929292;
+	}
+	.sidebar .nav-pills .dropdown-menu > .anchomenu > a{
+		margin-left: 0;
+	}
+	.sidebar .menu > li, .sidebar .menu > li > a, .sidebar .menu, .p-sidebar{
+		display: inline;
+		width: 100%;
+		background: #f6f6f6;
+		text-align: center;
+	}
+	.p-sidebar{
+		margin: 0;
+		padding: 5px 0;
+	}
+	.legal{
+		float: left;
+	}
+	.legal .menu{
+		display: inline;
+		width: 100%;
+		padding-left: 0;
+	}
+	.legal .menu li a{
+		text-align: left;
+	}
+	.contact{
+		padding-left: 12px;
+	}	
+	.copyright{
+		width: 100%;
+		text-align: left;
+		margin-top: 10px;
+	}
+	.copyright div{
+		float: left !important;
+	}
+	.main{
+		width: 100%;
+	}
+	.single .sidebar .nav-pills li{
+		margin-top: 10px;
+	}
+	.status-fik_checkout{
+		margin-bottom: 60px;
+	}
+	.contentstatic{
+		padding: 0;
+	}
 }
