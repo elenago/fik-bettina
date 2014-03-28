@@ -477,6 +477,8 @@ footer div > .widget{
     right: -188px;
     z-index: 10;
     background: transparent;
+    text-transform: lowercase;
+    font-size: 13px;
 }
 /*.thumbnails{
 	padding-left: 0;
@@ -753,4 +755,8 @@ article.status-fik_checkout{
 
 .nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
     background-color: #FFFFFF;
+}
+
+.fik_product .product-gallery .header-product h1.entry-title{
+	color: #444346;
 }
