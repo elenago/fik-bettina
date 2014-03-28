@@ -17,7 +17,7 @@
                         // We print the post thumbnail (if it exists) with a maximum size of 620px x 9999px:
                        // the_post_thumbnail('post-thumbnail',array('data-zoom-image' => array_shift(array_values(wp_get_attachment_image_src( get_post_thumbnail_id(get_the_ID()), 'large' ))),'itemprop' => "image"));                
                     ?>
-                    <?php the_post_thumbnail('450-thumbnail',array('class'=>'img-responsive')) ?>
+                    <?php the_post_thumbnail('450-thumbnail',array('class'=>'img-responsive', 'id'=>'prod-img')) ?>
                 </div>
                 <?php 
                 // this function outputs a <ul> with class="product-image-thumbnails" where each <li> is a thumbnil that links to a biger image (sizes specified in function). 
@@ -26,20 +26,19 @@
                 ?>
             <?php endif; ?>
         </div>
-        <div class="product-gallery col-md-6 no-padding-right">
+        <div class="product-gallery col-md-6 no-padding-left"  id="descr">
             <header class="header-product">
                 <h1 itemprop="name" class="entry-title product-title"><?php the_title(); ?></h1>
             </header>
-            <div itemprop="description" class="entry-content col-md-12">
+            <div itemprop="description" class="entry-content">
                 <?php echo $post->post_content; ?>
 
-                <?php the_product_gallery_thumbnails('150-thumbnail',array('class'=>'img-responsive')); ?>
+                <?php the_product_gallery_thumbnails('150-thumbnail', array('class'=>'img-responsive'), '450-thumbnail'); ?>
                 <?php wp_link_pages( array( 'before' => '<div class="page-links">' . __( 'Pages:', 'twentytwelve' ), 'after' => '</div>' ) ); ?>
             </div><!-- .entry-content -->
             <div class="price-and-purchase">
             <div class="msgproduct"><?php echo fik_messages(); ?></div>
-
-                <?php echo('<form action="" class="fik_add_cart" method="post" enctype="multipart/form-data"><input type="hidden" name="store_product_id" value="' . esc_attr(get_the_ID()) . '">'
+            <?php echo('<form action="" class="fik_add_cart" method="post" enctype="multipart/form-data"><input type="hidden" name="store_product_id" value="' . esc_attr(get_the_ID()) . '">'
         . get_fik_product_select_variations() . get_fik_product_select_quantity() . get_add_to_cart_button() .
         '</form>'); ?>
                 <?php the_fik_price(); ?>
@@ -50,9 +49,6 @@
                 <?php endif; ?>
             </div> 
         </div>     
-    <footer>
-      <?php wp_link_pages(array('before' => '<nav class="page-nav"><p>' . __('Pages:', 'roots'), 'after' => '</p></nav>')); ?>
-    </footer>
     <?php comments_template('/templates/comments.php'); ?>
   </article>
 

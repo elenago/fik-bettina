@@ -27,6 +27,7 @@ add_theme_support('bootstrap-gallery');     // Enable Bootstrap's thumbnails com
 add_theme_support('nice-search');           // Enable /?s= to /search/ redirect
 add_theme_support('jquery-cdn');            // Enable to load jQuery from the Google CDN
 add_theme_support('sidebar-left');          // Enable left sidebar
+add_theme_support('sidebar2');              // Enable left sidebar
 
 /**
  * Configuration values
@@ -38,22 +39,29 @@ define('POST_EXCERPT_LENGTH', 40); // Length in words for excerpt_length filter 
  * .main classes
  */
 function roots_main_class() {
-  if (roots_display_sidebar()) {
-    // Classes on pages with the sidebar
-    $class = 'col-sm-10';
-  } else {
-    // Classes on full width pages
-    $class = 'col-sm-12';
-  }
+    if (roots_display_sidebar()) {
+        // Classes on pages with the sidebar
+        return 'col-sm-10';
+    }
 
-  return $class;
+    if (roots_display_sidebar2()){
+        return 'col-sm-9';
+    }
+
+    // Classes on full width pages
+    return 'col-sm-12';
 }
 
 /**
  * .sidebar classes
  */
 function roots_sidebar_class() {
-  return 'col-sm-2';
+    if(roots_display_sidebar()) {
+
+        return 'col-sm-2';
+    }
+
+    return 'col-sm-3';
 }
 
 /**
@@ -75,6 +83,8 @@ function roots_display_sidebar() {
      */
     array(
       'is_404',
+      array('is_singular', array('post')),
+      'is_home',
     ),
     /**
      * Page template checks (via is_page_template())
@@ -86,6 +96,38 @@ function roots_display_sidebar() {
   );
 
   return apply_filters('roots_display_sidebar', $sidebar_config->display);
+}
+
+function roots_display_sidebar2() {
+  $sidebar_config1 = new Roots_Sidebar(
+    /**
+     * Conditional tag checks (http://codex.wordpress.org/Conditional_Tags)
+     * Any of these conditional tags that return true won't show the sidebar
+     *
+     * To use a function that accepts arguments, use the following format:
+     *
+     * array('function_name', array('arg1', 'arg2'))
+     *
+     * The second element must be an array even if there's only 1 argument.
+     */
+    array(
+      'is_404',
+      'is_archive',
+      'is_front_page',
+      'is_front_page',
+      array('is_singular', array('fik_product')),
+      array('is_page', array('cart')),
+    ),
+    /**
+     * Page template checks (via is_page_template())
+     * Any of these page templates that return true won't show the sidebar
+     */
+    array(
+      'template-custom.php'
+    )
+  );
+
+  return apply_filters('roots_display_sidebar', $sidebar_config1->display);
 }
 
 /**

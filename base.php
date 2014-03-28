@@ -13,7 +13,7 @@
 
   <div class="wrap container" role="document">
     <div class="content row">
-    <main class="main <?php echo roots_main_class(); ?> <?php if(current_theme_supports('sidebar-left')) { echo 'pull-right';} ?>" role="main">
+    <main class="main <?php echo roots_main_class(); ?> <?php if(roots_display_sidebar()) { echo 'pull-right';} ?>" role="main">
          <?php include roots_template_path(); ?>
       </main><!-- /.main -->
       <?php if (roots_display_sidebar()) : ?>
@@ -28,6 +28,14 @@
           </aside><!-- /.sidebar -->
         </div><!-- /.sidebar -->
 
+      <?php endif; ?>
+
+      <?php if (roots_display_sidebar2()) : ?>
+        <div class="sidebar <?php echo roots_sidebar_class(); ?>">
+          <aside class="m-sidebar" role="complementary">
+            <?php dynamic_sidebar('sidebar-blog'); ?>
+          </aside><!-- /.sidebar -->
+        </div><!-- /.sidebar -->
       <?php endif; ?>
 
     </div><!-- /.content -->

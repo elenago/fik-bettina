@@ -10,10 +10,10 @@
     <div class="may col-sm-3 no-padding">
       <?php
         if (has_nav_menu('blogshop-menu') || has_nav_menu('blogshop2-menu')) :
-          if(is_single() || is_page('blog')) :
-            wp_nav_menu(array('theme_location' => 'blogshop-menu', 'menu_class' => 'nav nav-pills blog-menu'));
-          else :
+          if(roots_display_sidebar()) :
             wp_nav_menu(array('theme_location' => 'blogshop2-menu', 'menu_class' => 'nav nav-pills blog-menu'));
+          else :
+            wp_nav_menu(array('theme_location' => 'blogshop-menu', 'menu_class' => 'nav nav-pills blog-menu'));
           endif;
         endif;
       ?>
@@ -28,7 +28,13 @@
   </div>
 
   <div class="row">
-     <div class="font-header-inf may description col-lg-7"><a href="<?php echo home_url('/') ?>" class="logobettina pull-left"><img src="/wp-content/themes/fik-bettina/assets/img/logo.png"></a></div>
+     <div class="font-header-inf may description col-lg-7">
+         <?php if(roots_display_sidebar()): ?>
+             <a href="<?php echo home_url('/') ?>" class="logobettina pull-left"><img src="/wp-content/themes/fik-bettina/assets/img/logo.png"></a>
+         <?php else: ?>
+             <a href="<?php echo home_url('/blog/') ?>" class="logobettina pull-left"><img src="/wp-content/themes/fik-bettina/assets/img/logoblog.png"></a>
+         <?php endif; ?>
+     </div>
    
     <!--<p >tu vestido.es</p>-->
    <!-- <div class="font-header-inf may logo col-lg-5"><a href="#" class="logobettina"><img src="http://fikstores/wp-content/uploads/2014/03/logo.png"></a></div>

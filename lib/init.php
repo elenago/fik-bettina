@@ -27,5 +27,13 @@ function roots_setup() {
 
   // Tell the TinyMCE editor to use a custom stylesheet
   add_editor_style('/assets/css/editor-style.css');
+  register_sidebar(array(
+      'name'          => __('Blog Sidebar', 'roots'),
+      'id'            => 'sidebar-blog',
+      'before_widget' => '<section id="%1$s" class="widget %2$s"><div class="widget-inner">',
+      'after_widget'  => '</div></section>',
+      'before_title'  => '<h3>',
+      'after_title'   => '</h3>',
+  ));
 }
 add_action('after_setup_theme', 'roots_setup');

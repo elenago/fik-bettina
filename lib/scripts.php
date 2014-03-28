@@ -13,7 +13,6 @@
 function roots_scripts() {
   wp_enqueue_style('roots_main', get_template_directory_uri() . '/assets/css/main.min.css', false, '9880649384aea9f1ee166331c0a30daa');
   wp_enqueue_style('roots_bettina', get_template_directory_uri() . '/assets/css/bettina.css', false, '9880649384aea9f1ee166331c0a30daa');
-
   // jQuery is loaded using the same method from HTML5 Boilerplate:
   // Grab Google CDN's latest jQuery with a protocol relative URL; fallback to local if offline
   // It's kept in the header instead of footer to avoid conflicts with plugins.
@@ -32,6 +31,14 @@ function roots_scripts() {
   wp_enqueue_script('modernizr');
   wp_enqueue_script('jquery');
   wp_enqueue_script('roots_scripts');
+  if ( 'fik_product' == get_post_type() ){ 
+    wp_register_script('elevateZoom', get_template_directory_uri() . '/assets/js/plugins/jquery.elevateZoom.min.js', array(), null, false);
+    wp_enqueue_script('elevateZoom');
+
+    wp_register_script('zoom', get_template_directory_uri() . '/assets/js/plugins/zoom.js', array(), null, false);
+    wp_enqueue_script('zoom');
+
+  }
 }
 add_action('wp_enqueue_scripts', 'roots_scripts', 100);
 
