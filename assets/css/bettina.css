@@ -116,6 +116,9 @@ a:hover, a:active{
 .sblog{
 	color: #C10D27;
 }
+.active > .dropdown-menu {
+    display: block;
+}
 /*SOCIAL*/
 .social{
 	padding-top: 7px;
@@ -469,21 +472,25 @@ footer div > .widget{
 	width: 100%;
 	display: block;
 }
-.button, .button:hover{
-	display: block;
-	border: none;
-	bottom: -50px;
+
+.fik_add_cart .button, .button:hover {
+    display: block;
+    border: none;
+    bottom: -50px;
     position: relative;
-    right: -188px;
+    right: -60px;
+    text-transform: uppercase;
     z-index: 10;
     background: transparent;
-    text-transform: lowercase;
-    font-size: 13px;
 }
-/*.thumbnails{
-	padding-left: 0;
-	margin-top: 20px;
-}*/
+.cart_item_update {
+    margin-left: 9px;
+    border-radius: 0;
+    padding: 3px;
+    padding-left: 6px;
+    padding-right: 6px;
+}
+
 .thumbnail{
 	border: none;
 	display: inline-block;
@@ -496,26 +503,7 @@ footer div > .widget{
 .product-gallery .entry-content{
 	margin-bottom: 20px;
 }
-/*.product-image-frame{
-	position: relative;
-}
-.product-image-frame:hover .price{
-    background-color: rgba(165, 21, 43, 0.5);
-    color: #FFFFFF;
-    height: 200px;
-    top: 200px;
-    text-align: center;
-    padding-top: 150px;
-}
-.product-title{
-	margin-top: 10px;
-    position: absolute;
-    text-align: center;
-    top: 320px;
-    width: 100%;
-    z-index: 20;
-}
-*/
+
 .fik_to_checkout .button {
 	background: #D6D7D8;
 	color: #929292;
@@ -613,6 +601,7 @@ article.status-fik_checkout{
 	text-align: right;
 	color: #6E7072;
 	margin-bottom: 20px;
+	border: none;
 }
 .table > caption + thead > tr:first-child > th, .table > colgroup + thead > tr:first-child > th, .table > thead:first-child > tr:first-child > th, .table > caption + thead > tr:first-child > td, .table > colgroup + thead > tr:first-child > td, .table > thead:first-child > tr:first-child > td{
 	border:none;
@@ -760,3 +749,4 @@ article.status-fik_checkout{
 .fik_product .product-gallery .header-product h1.entry-title{
 	color: #444346;
 }
+
