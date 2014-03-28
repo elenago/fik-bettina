@@ -184,6 +184,9 @@ a:hover, a:active{
 .sidebar li a{
 	text-align: right;
 }
+.sidebar li.active ul{
+	display: block;
+}
 .sidebar > .nav{
 	text-transform: uppercase;
 	line-height: 14px;
