@@ -120,15 +120,18 @@ a:hover, a:active{
     display: block;
 }
 /*SOCIAL*/
-.social{
+.social1{
+	display: none;
+}
+.social, .social1{
 	padding-top: 7px;
 	float: right;
 	width: 150px;
 }
-.social li{
+.social li, .social1 li{
 	width: 22px;
 }
-.social li a{
+.social li a, .social1 li a{
 	background:url('../img/bg-social.png') scroll no-repeat 0 0 transparent;
 	text-indent: -99000px;
 	overflow: hidden;
@@ -137,41 +140,41 @@ a:hover, a:active{
     padding: 0;
     width: 22px;
 }
-.social li a:hover{	
+.social li a:hover, .social1 li a:hover{	
 	background:url('../img/bg-social.png') scroll no-repeat 0 0 transparent;
 	height: 22px;
 	border-radius: 0;
 }
-.social .face a{
+.social .face a, .social1 .face a{
 	background-position:-2px 0;
 }
-.social .twitter a{
+.social .twitter, .social1 .twitter a{
 	background-position:-23px 0;
 }
-.social .instagram a{
+.social .instagram a,.social1 .instagram a{
 	background-position:-44px 0;
 }
-.social .pinterest a{
+.social .pinterest a,.social1 .pinterest a{
 	background-position:-65px 0;
 }
-.social .gplus a{
+.social .gplus a, .social1 .gplus a{
 	background-position:-86px 0;
 }
 
 
-.social .face a:hover{
+.social .face a:hover, .social1 .face a:hover{
 	background-position:-2px -23px;
 }
-.social .twitter a:hover{
+.social .twitter a:hover, .social1 .twitter a:hover{
 	background-position:-23px -23px ;
 }
-.social .instagram a:hover{
+.social .instagram a:hover, .social1 .instagram a:hover{
 	background-position:-44px -23px;
 }
-.social .pinterest a:hover{
+.social .pinterest a:hover, .social1 .pinterest a:hover{
 	background-position:-65px -23px;
 }
-.social .gplus a:hover{
+.social .gplus a:hover, .social1 .gplus a:hover{
 	background-position:-86px -23px;
 }
 
@@ -675,13 +678,68 @@ article.status-fik_checkout{
 }
 
 @media screen and (max-width: 780px){
-
+	.blog-menu{
+		border: 1px solid #808080;
+		border-left: 0;
+		border-right: 0;
+	}
+	.blog-menu li{
+		width: 45%;
+	}
+	.presponsive{
+		position: absolute;
+		top: 0;
+		width: 100%;
+		margin: 20px 0;
+		height: 40px;
+	}
+	.lang{
+		margin-top: 20px;
+	}
+	.main article{
+		padding: 0 !important;
+	}
+	.cesta{
+		text-indent: -9000px;
+		overflow: hidden;
+		margin-right: 30px;
+	}
+	.social
+	{
+		display: none;
+	}
+	.social1{
+		display: block;
+		width: 100%;
+		border: 1px solid #808080;
+		border-left: 0;
+		border-right: 0;
+		margin: 20px 0;
+		padding: 0 20px;
+	}
+	.social1 .nav-pills{
+		margin: 10px auto;
+		width: 120px;
+	}
+	.titulo{
+		padding-left: 15px;
+	}
+	.type-fik_product #descr{
+		padding-right: 0 !important;
+	}
 	.sidebar .menu > li > a, .nav-pills.blog-menu > li > a,.sidebar .nav-pills > li > a, .nav-pills > li > a:hover, .nav-pills > li > a:focus, .nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus, .nav-pills li > a.dropdown-toggle{
-		background: #f6f6f6;
 		color: #929292;
 		text-align: center;
-				border-radius: 0;
-
+		border-radius: 0;
+	}
+	.sidebar > ul.nav-pills > li:first-child >a{
+		border-top: 1px solid #808080;
+	}
+	.sidebar > ul.nav-pills > li:last-child >a{
+		border-bottom: 1px solid #808080;
+	}
+	.dropdown-menu > li > a{
+		text-align: center;
 	}
 	.sidebar .nav-pills li{
 		margin-left: 0;
@@ -696,11 +754,32 @@ article.status-fik_checkout{
 	.sidebar .nav-pills .dropdown-menu > .anchomenu > a{
 		margin-left: 0;
 	}
-	.sidebar .menu > li, .sidebar .menu > li > a, .sidebar .menu, .p-sidebar{
-		display: inline;
+	.sidebar .m-sidebar{
+		margin-top: 30px;
+	}
+	.sidebar aside section:first-child{
+		border: 1px solid #808080;
+		height: 40px;
+		border-left: 0;
+		border-right: 0;
+	}
+	.sidebar p:last-child{
+		display: none;
+	}
+	.sidebar .menu{
 		width: 100%;
-		background: #f6f6f6;
-		text-align: center;
+		padding: 0 15px;
+	}
+	.sidebar .menu > li:first-child, .sidebar .menu > li:last-child{
+		display: inline;
+		width: auto;
+		padding-top: 10px;
+	}
+	.sidebar .menu > li:first-child{
+		float: left !important;
+	}
+	.sidebar .menu > li:last-child{
+		float: right !important;
 	}
 	.p-sidebar{
 		margin: 0;
@@ -708,6 +787,7 @@ article.status-fik_checkout{
 	}
 	.legal{
 		float: left;
+		margin-top: 10px;
 	}
 	.legal .menu{
 		display: inline;
@@ -750,3 +830,7 @@ article.status-fik_checkout{
 	color: #444346;
 }
 
+/*Listado productos padding right*/
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12{
+	padding-right: 14px !important;
+}

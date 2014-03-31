@@ -7,7 +7,7 @@
         endif;
       ?>
     </div>
-    <div class="may col-sm-3 no-padding">
+    <div class="titulo may col-sm-3 no-padding">
       <?php
         if (has_nav_menu('blogshop-menu') || has_nav_menu('blogshop2-menu')) :
           if(roots_display_sidebar()) :
@@ -25,9 +25,10 @@
         endif;
       ?>
     </div>
+
   </div>
 
-  <div class="row">
+  <div class="row presponsive">
      <div class="font-header-inf may description col-lg-7">
          <?php if(roots_display_sidebar()): ?>
              <a href="<?php echo home_url('/') ?>" class="logobettina pull-left"><img src="/wp-content/themes/fik-bettina/assets/img/logo.png"></a>
