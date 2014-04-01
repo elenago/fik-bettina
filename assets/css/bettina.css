@@ -693,7 +693,7 @@ article.status-fik_checkout{
 
 /*MEDIA QUERIES*/
 
-@media screen and (min-width: 688px) and (max-width: 1000px){
+@media screen and (min-width: 768px) and (max-width: 992px){
  	.banner-bettina .social{
  		width: 16%;
  		padding: 16px 0 0 0;
@@ -706,7 +706,7 @@ article.status-fik_checkout{
 	}
 }
 
-@media screen and (max-width: 780px){
+@media screen and (max-width: 765px){
 	.banner-bettina{
 		margin-top: 40px;
 		padding-bottom: 0;
