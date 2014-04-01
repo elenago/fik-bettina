@@ -120,7 +120,7 @@ a:hover, a:active{
     display: block;
 }
 /*SOCIAL*/
-.social1{
+.fcontainer{
 	display: none;
 }
 .social, .social1{
@@ -266,7 +266,9 @@ a:hover, a:focus, .nav-pills > li.active > a:hover{
 .m-sidebar{
 	margin-top: 50px;
 }
-
+.fm-sidebar{
+	display: none;
+}
 .img-home{
 	width: 100%;
 }
@@ -286,7 +288,7 @@ a:hover, a:focus, .nav-pills > li.active > a:hover{
 .widget ul{
 	margin: 0;
 }
-.widget li{
+.m-sidebar .widget li{
 	text-align: right;
 }
 .widget .active a{
@@ -678,10 +680,15 @@ article.status-fik_checkout{
 }
 
 @media screen and (max-width: 780px){
+	.banner-bettina{
+		margin-top: 40px;
+		padding-bottom: 0;
+	}
+	.lang .nav-pills{
+		margin-top: 6px;
+	}
 	.blog-menu{
-		border: 1px solid #808080;
-		border-left: 0;
-		border-right: 0;
+		border-top: 1px solid #808080;
 	}
 	.blog-menu li{
 		width: 45%;
@@ -699,14 +706,25 @@ article.status-fik_checkout{
 	.main article{
 		padding: 0 !important;
 	}
+	.logobettina{
+		margin-left: 0;
+	}
+	.blog-menu li{
+		width: auto;
+	}
 	.cesta{
 		text-indent: -9000px;
 		overflow: hidden;
 		margin-right: 30px;
 	}
-	.social
-	{
+	.social, .m-sidebar{
 		display: none;
+	}
+	.fm-sidebar{
+		display: block;
+	}
+	.fcontainer {
+		display: block;
 	}
 	.social1{
 		display: block;
@@ -714,7 +732,7 @@ article.status-fik_checkout{
 		border: 1px solid #808080;
 		border-left: 0;
 		border-right: 0;
-		margin: 20px 0;
+		margin: 5px 0px 20px 0;
 		padding: 0 20px;
 	}
 	.social1 .nav-pills{
@@ -726,6 +744,9 @@ article.status-fik_checkout{
 	}
 	.type-fik_product #descr{
 		padding-right: 0 !important;
+	}
+	.sidebar{
+		margin-top: 0;
 	}
 	.sidebar .menu > li > a, .nav-pills.blog-menu > li > a,.sidebar .nav-pills > li > a, .nav-pills > li > a:hover, .nav-pills > li > a:focus, .nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus, .nav-pills li > a.dropdown-toggle{
 		color: #929292;
@@ -754,7 +775,7 @@ article.status-fik_checkout{
 	.sidebar .nav-pills .dropdown-menu > .anchomenu > a{
 		margin-left: 0;
 	}
-	.sidebar .m-sidebar{
+	.sidebar .m-sidebar, .sidebar .fm-sidebar{
 		margin-top: 30px;
 	}
 	.sidebar aside section:first-child{
@@ -819,6 +840,26 @@ article.status-fik_checkout{
 	}
 	.contentstatic{
 		padding: 0;
+	}
+	.fm-sidebar .widget{
+		margin: 0 15px;
+	}
+	.fm-sidebar .widget .menu{
+		width: 100%;
+		height: 30px;
+		padding: 0 30px;
+		border-top:1px solid #808080;
+	}
+	.fm-sidebar .widget .menu li{
+		width: 50%;
+		text-align: none;
+		padding-top: 10px;
+	}
+	.fm-sidebar .widget .menu li:first-child{
+		text-align: right !important;
+	}
+	.fm-sidebar .widget .menu li:last-child{
+		text-align: left !important ;
 	}
 }
 

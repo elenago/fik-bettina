@@ -1,10 +1,15 @@
 <footer class="content-info" role="contentinfo">
+    <aside class="fm-sidebar" role="complementary">
+            <?php include roots_sidebar_path(); ?>
+          </aside><!-- /.sidebar -->
+    <div class="fcontainer container">
       <div class="social1">      
       <?php
         if (has_nav_menu('social-menu')) :
           wp_nav_menu(array('theme_location' => 'social-menu', 'menu_class' => 'nav nav-pills'));
         endif;
       ?>
+      </div>
     </div>
   <div class="container">
     <?php dynamic_sidebar('sidebar-footer'); ?>
