@@ -45,6 +45,6 @@
   <?php
     do_action('get_footer', $footer_template_name);
   ?>
-
+  <div class="sizesandshippingsmodaloverlay">&nbsp;</div>
 </body>
 </html>

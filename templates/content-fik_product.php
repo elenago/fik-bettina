@@ -39,14 +39,48 @@
             <div class="price-and-purchase">
             <div class="msgproduct"><?php echo fik_messages(); ?></div>
             <?php echo('<form action="" class="fik_add_cart" method="post" enctype="multipart/form-data"><input type="hidden" name="store_product_id" value="' . esc_attr(get_the_ID()) . '">'
-        . get_fik_product_select_variations() . get_fik_product_select_quantity() . get_add_to_cart_button() .
-        '</form>'); ?>
+            . get_fik_product_select_variations() . get_fik_product_select_quantity()); ?>
+
+            <div class="sizesandshippings">
+            <ul class="text-right">
+            <li><a href="/guia-de-tallas/" class="sizesinformation"><?php _e('GUÍA DE TALLAS', 'fik-bettina') ?></a></li>
+            <li><a href="/envio/" class="shippingsinformation"><?php _e('ENVÍO', 'fik-bettina') ?></a></li>
+            </ul>
+            </div>
+            <div class="sizesandshippingsmodal">
+            <div class="sizes col-md-12 panel panel-default">
+                <div class="panel-body">
+                    <button type="button" class="close">&times;</button>
+                    <?php
+                        $shipping_page = get_page_by_title('Envío');
+                        echo $shipping_page->post_content;
+                    ?>
+                </div>
+            </div>
+            <div class="shippings col-md-12 panel panel-default">
+                <div class="panel-body">
+                    <button type="button" class="close">&times;</button>
+                    <?php
+                        $shipping_page = get_page_by_title('Guía de tallas');
+                        echo $shipping_page->post_content;
+                    ?>
+                </div>
+            </div>
+            </div>
+            <div class="col-md-12 divprice fik_add_cart">
+                <div class="col-md-6 price">
                 <?php the_fik_price(); ?>
-                <?php if ( is_active_sidebar( 'sidebar-4' ) ) : ?>
-                    <div id="product-secondary" class="widget-area" role="complementary">
-                        <?php dynamic_sidebar( 'sidebar-4' ); ?>
-                    </div><!-- #secondary -->
-                <?php endif; ?>
+                </div>
+                <div class="col-md-6 text-right">
+                <?php echo get_add_to_cart_button(); ?>
+                </div>
+            </div>
+            </form>
+            <?php if ( is_active_sidebar( 'sidebar-4' ) ) : ?>
+                <div id="product-secondary" class="widget-area" role="complementary">
+                    <?php dynamic_sidebar( 'sidebar-4' ); ?>
+                </div><!-- #secondary -->
+            <?php endif; ?>
             </div> 
         </div>     
     <?php comments_template('/templates/comments.php'); ?>

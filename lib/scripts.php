@@ -38,6 +38,8 @@ function roots_scripts() {
     wp_register_script('zoom', get_template_directory_uri() . '/assets/js/plugins/zoom.js', array(), null, false);
     wp_enqueue_script('zoom');
 
+    wp_register_script('sizeandshippings', get_template_directory_uri() . '/assets/js/fik_product.js', array(), null, false);
+    wp_enqueue_script('sizeandshippings');
   }
 }
 add_action('wp_enqueue_scripts', 'roots_scripts', 100);

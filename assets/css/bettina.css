@@ -461,10 +461,19 @@ footer div > .widget{
 .controls{
 	float: left;
 }
+
+.control-group{
+    overflow: hidden;
+}
+
 .controls .input-mini{
 	width: 50px;
 }
 .product-gallery .price{
+	padding: 6px;
+}
+
+.divprice {
 	background: #D6D7D8;
 	padding: 15px;
 	margin-top: 10px;
@@ -472,18 +481,36 @@ footer div > .widget{
 	border-radius: 0;
 	text-align: left;
 	position: relative;
-	width: 100%;
 	display: block;
 }
 
-.fik_add_cart .button, .button:hover {
-    display: block;
-    border: none;
-    bottom: -50px;
+.sizesandshippings ul {
+    padding-right: 0;
+    
+}
+
+.sizesandshippingsmodal {
     position: relative;
-    right: -60px;
+}
+
+.sizesandshippingsmodal .sizes, .sizesandshippingsmodal .shippings {
+    position: absolute;
+    z-index: 1;
+    top: -50px;
+}
+
+.sizesandshippingsmodaloverlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.fik_add_cart .button, .button:hover {
+    border: none;
     text-transform: uppercase;
-    z-index: 10;
     background: transparent;
 }
 .cart_item_update {
