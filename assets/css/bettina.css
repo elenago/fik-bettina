@@ -748,6 +748,7 @@ article.status-fik_checkout{
 		display: none;
 	}
 	.fm-sidebar{
+		margin-top: 30px;
 		display: block;
 	}
 	.fcontainer {
@@ -774,6 +775,7 @@ article.status-fik_checkout{
 	}
 	.sidebar{
 		margin-top: 0;
+		margin-bottom: 30px;
 	}
 	.sidebar .menu > li > a, .nav-pills.blog-menu > li > a,.sidebar .nav-pills > li > a, .nav-pills > li > a:hover, .nav-pills > li > a:focus, .nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus, .nav-pills li > a.dropdown-toggle{
 		color: #929292;
