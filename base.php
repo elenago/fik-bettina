@@ -27,6 +27,9 @@
 
       <?php endif; ?>
 
+    <main class="main <?php echo roots_main_class(); ?> <?php if(roots_display_sidebar()) { echo 'pull-right';} ?>" role="main">
+         <?php include roots_template_path(); ?>
+      </main><!-- /.main -->
       <?php if (roots_display_sidebar2()) : ?>
         <div class="sidebar <?php echo roots_sidebar_class(); ?>">
           <aside class="m-sidebar" role="complementary">
@@ -34,9 +37,6 @@
           </aside><!-- /.sidebar -->
         </div><!-- /.sidebar -->
       <?php endif; ?>
-    <main class="main <?php echo roots_main_class(); ?> <?php if(roots_display_sidebar()) { echo 'pull-right';} ?>" role="main">
-         <?php include roots_template_path(); ?>
-      </main><!-- /.main -->
       
 
     </div><!-- /.content -->
