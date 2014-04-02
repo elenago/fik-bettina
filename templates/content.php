@@ -2,7 +2,7 @@
 
     <div class="col-md-6 no-padding-left">
         <div class="product-image-frame" style="margin-bottom: 50px">
-        <?php the_post_thumbnail('450-thumbnail', array('class'=>'img-responsive')); ?>
+        <?php the_post_thumbnail('460-thumbnail', array('class'=>'img-responsive')); ?>
         <h2 class="product-title" style="margin-top: 10px"><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></h2>
         <div class="product-price"><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_fik_price(); ?></a></div>
         </div>
@@ -16,7 +16,7 @@
         <h2 class="entry-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
   </header>
   <div class="entry-content imgpost">
-      <?php the_post_thumbnail('450-thumbnail', array('class'=>'img-responsive')); ?>
+      <?php the_post_thumbnail('460-thumbnail', array('class'=>'img-responsive')); ?>
   </div>
   <div class="entry-summary">
     <?php the_excerpt(); ?>
