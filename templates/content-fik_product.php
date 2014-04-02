@@ -1,7 +1,7 @@
 <?php if ( is_tax('store-section') || is_post_type_archive( 'fik_product' ) || is_home() || is_page_template( 'page-templates/store-front-page.php' ) || is_search() ) : // Only display product excerpt for home, archive page, store section and search ?>    
 
     <div class="col-md-6 no-padding-left">
-        <div class="product-image-frame" style="margin-bottom: 50px">
+        <div class="product-image-frame">
         <?php the_post_thumbnail('460-thumbnail', array('class'=>'img-responsive')); ?>
         <h2 class="product-title" style="margin-top: 10px"><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></h2>
         <div class="product-price"><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_fik_price(); ?></a></div>
