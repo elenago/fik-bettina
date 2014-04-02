@@ -689,6 +689,7 @@ article.status-fik_checkout{
 }
 .dropdown-menu > .anchomenu > a{
 	margin-left: -78px;
+	padding-right: 0;
 }
 
 /*MEDIA QUERIES*/
@@ -707,6 +708,9 @@ article.status-fik_checkout{
 }
 
 @media screen and (max-width: 765px){
+	.logobettina{
+		width: 100%;
+	}
 	.banner-bettina{
 		margin-top: 40px;
 		padding-bottom: 0;
