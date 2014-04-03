@@ -733,10 +733,7 @@ article.status-fik_checkout{
 }
 
 @media screen and (max-width: 765px){
-	.fm-sidebar .widget.widget_text h3{
-		display: none;
-	}
-	.widget .widget_ns_mailchimp{
+	.widget.widget_ns_mailchimp{
 		display: none;
 	}
 	.logobettina{
