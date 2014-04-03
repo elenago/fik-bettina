@@ -1,11 +1,10 @@
 <?php if ( is_tax('store-section') || is_post_type_archive( 'fik_product' ) || is_home() || is_page_template( 'page-templates/store-front-page.php' ) || is_search() ) : // Only display product excerpt for home, archive page, store section and search ?>    
 
-    <div class="col-md-6 no-padding-left">
-        <div class="product-image-frame" style="margin-bottom: 50px">
-        <?php the_post_thumbnail('450-thumbnail', array('class'=>'img-responsive')); ?>
+    <div class="col-md-6 no-padding-left product-image-frame">
+
+        <?php the_post_thumbnail('460-thumbnail', array('class'=>'img-responsive')); ?>
         <h2 class="product-title" style="margin-top: 10px"><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></h2>
         <div class="product-price"><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_fik_price(); ?></a></div>
-        </div>
     </div>
 
     <?php else: ?>
@@ -17,7 +16,7 @@
                         // We print the post thumbnail (if it exists) with a maximum size of 620px x 9999px:
                        // the_post_thumbnail('post-thumbnail',array('data-zoom-image' => array_shift(array_values(wp_get_attachment_image_src( get_post_thumbnail_id(get_the_ID()), 'large' ))),'itemprop' => "image"));                
                     ?>
-                    <?php the_post_thumbnail('450-thumbnail',array('class'=>'img-responsive', 'id'=>'prod-img')) ?>
+                    <?php the_post_thumbnail('460-thumbnail',array('class'=>'img-responsive', 'id'=>'prod-img', 'data-zoom-image' => array_shift(array_values(wp_get_attachment_image_src( get_post_thumbnail_id(get_the_ID()), 'large' ))))) ?>
                 </div>
                 <?php 
                 // this function outputs a <ul> with class="product-image-thumbnails" where each <li> is a thumbnil that links to a biger image (sizes specified in function). 
@@ -33,7 +32,7 @@
             <div itemprop="description" class="entry-content">
                 <?php echo $post->post_content; ?>
 
-                <?php the_product_gallery_thumbnails('150-thumbnail', array('class'=>'img-responsive'), '450-thumbnail'); ?>
+                <?php the_product_gallery_thumbnails('150-thumbnail', array('class'=>'img-responsive'), 'full'); ?>
                 <?php wp_link_pages( array( 'before' => '<div class="page-links">' . __( 'Pages:', 'twentytwelve' ), 'after' => '</div>' ) ); ?>
             </div><!-- .entry-content -->
             <div class="price-and-purchase">

@@ -585,6 +585,7 @@ footer div > .widget{
 }
 .product-image-frame{
 	position: relative;
+	padding-bottom: 50px;
 }
 .product-image-frame:hover .product-price .price .amount, .product-title a{
 	display: inline;
