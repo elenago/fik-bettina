@@ -277,12 +277,16 @@ a:hover, a:focus, .nav-pills > li.active > a:hover{
 }
 
 /*Newsletter*/
+
 .widget h3{
 	font-size: 13px;
     padding-right: 10px;
     text-align: right;
     text-transform: uppercase;
     margin-top:6px;
+}
+.widget form label{
+	display: none;
 }
 .widget form input{
 	width: 154px;
