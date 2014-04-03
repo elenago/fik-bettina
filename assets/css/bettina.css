@@ -216,7 +216,7 @@ a:hover, a:focus, .nav-pills > li.active > a:hover{
    padding-right: 10px;
 }
 .nav >li >a{
-	padding: 10px 7px;
+	padding: 5px 10px;
 }
 .nav > li > a:hover, .nav > li > a:focus{
 	background-color: white;
@@ -257,7 +257,10 @@ a:hover, a:focus, .nav-pills > li.active > a:hover{
 	color: grey;
 	font-size: 13px;
 	text-transform: uppercase;
-	margin: 13px 10px 0 0;
+	margin: 0px 10px 0 0;
+}
+.p-sidebar:last-child{
+	    margin-bottom: 6px;
 }
 .widget .menu li:first-child{
 	padding-right: 0;
@@ -273,6 +276,24 @@ a:hover, a:focus, .nav-pills > li.active > a:hover{
 	width: 100%;
 }
 
+/*Newsletter*/
+.widget h3{
+	font-size: 13px;
+    padding-right: 10px;
+    text-align: right;
+    text-transform: uppercase;
+    margin-top:6px;
+}
+.widget form input{
+	width: 154px;
+}
+.widget form input.button{
+	background: transparent;
+	border: none;
+	padding: 0;
+    text-align: right;
+}
+
 /*FOOTER*/
 .contact{
 	display: inline;
@@ -282,7 +303,6 @@ a:hover, a:focus, .nav-pills > li.active > a:hover{
 	font-size: 14px;
 }
 .widget{
-	margin-top: 20px;
 	padding-right: 0;
 }
 .widget ul{
@@ -708,6 +728,12 @@ article.status-fik_checkout{
 }
 
 @media screen and (max-width: 765px){
+	.fm-sidebar .widget.widget_text h3{
+		display: none;
+	}
+	.widget .widget_ns_mailchimp{
+		display: none;
+	}
 	.logobettina{
 		width: 100%;
 	}
