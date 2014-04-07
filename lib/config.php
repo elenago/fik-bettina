@@ -24,6 +24,7 @@ $home_template_name = '';
 // Others
 add_theme_support('root-relative-urls');    // Enable relative URLs
 add_theme_support('bootstrap-gallery');     // Enable Bootstrap's thumbnails component on [gallery]
+add_theme_support('bootstrap-3');           // Enable Bootstrap's version 3
 add_theme_support('nice-search');           // Enable /?s= to /search/ redirect
 add_theme_support('jquery-cdn');            // Enable to load jQuery from the Google CDN
 add_theme_support('sidebar-left');          // Enable left sidebar
