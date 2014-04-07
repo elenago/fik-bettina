@@ -965,6 +965,9 @@ article.status-fik_checkout{
 /* Carousel */
 .carousel-caption {
     display: none;
+}
+
+.carousel-indicators {
     bottom: 0;
 }
 
