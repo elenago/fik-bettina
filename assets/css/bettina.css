@@ -723,16 +723,34 @@ article.status-fik_checkout{
 
 /*MEDIA QUERIES*/
 
+@media screen and (min-width: 992px) and (max-width: 1200px){
+	.widget form input {
+	    width: 124px;
+	}
+	.sidebar .nav-pills .dropdown .dropdown-menu{
+		left: -34px;
+    	top: 0;
+	}
+}
 @media screen and (min-width: 768px) and (max-width: 992px){
+ 	.widget form input {
+	    width: 87px;
+	}
  	.banner-bettina .social{
  		width: 16%;
- 		padding: 16px 0 0 0;
+ 		padding: 0;
  	}
  	article.contentstatic{
  		width: 100%;
  	}
- 	.social{
+ 	.banner-bettina .social{
 		margin-right: 10px;
+		padding: 0;
+		width: 18%;
+	}
+	.titulo{
+	    padding: 0 !important;
+	    width: 150px;
 	}
 }
 
