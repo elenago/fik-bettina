@@ -187,6 +187,10 @@ a:hover, a:active{
 	width: 100%;
 	display: inline;
 }
+.sidebar .nav-pills li{
+	margin: 5px 0;
+	padding: 0;
+}
 .sidebar li a{
 	text-align: right;
 }
@@ -737,7 +741,10 @@ article.status-fik_checkout{
 		display: none;
 	}
 	.logobettina{
-		width: 100%;
+		width: 80%;
+	}
+	.logobettina img{
+		float: left;
 	}
 	.banner-bettina{
 		margin-top: 40px;
