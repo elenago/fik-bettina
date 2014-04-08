@@ -731,6 +731,9 @@ article.status-fik_checkout{
 		left: -34px;
     	top: 0;
 	}
+    .product-image-frame{
+        min-height: 590px;
+    }
 }
 @media screen and (min-width: 768px) and (max-width: 992px){
  	.widget form input {
@@ -953,6 +956,9 @@ article.status-fik_checkout{
 	.fm-sidebar .widget .menu li:last-child{
 		text-align: left !important ;
 	}
+    .product-image-frame{
+        min-height: 710px;
+    }
 }
 
 .nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
