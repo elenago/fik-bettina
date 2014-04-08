@@ -602,7 +602,7 @@ footer div > .widget{
 .archive .product-image-frame:hover .product-title{
 	display: block;
 	z-index: 10;
-    bottom: 290px;
+    bottom: 350px;
 }
 
 /*Producto*/
