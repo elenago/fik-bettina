@@ -969,6 +969,7 @@ article.status-fik_checkout{
 
 .carousel-indicators {
     bottom: 0;
+    top: none;
 }
 
 .carousel-control {
