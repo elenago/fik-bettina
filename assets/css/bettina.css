@@ -593,7 +593,7 @@ footer div > .widget{
 }
 .product-image-frame{
 	position: relative;
-	/*padding-bottom: 50px;*/
+	padding-bottom: 50px;
 }
 .product-image-frame:hover .product-price .price .amount, .product-title a{
 	display: inline;
@@ -723,6 +723,11 @@ article.status-fik_checkout{
 
 /*MEDIA QUERIES*/
 
+@media screen and (min-width: 992px){
+    .product-image-frame{
+        min-height: 710px;
+    }
+}
 @media screen and (min-width: 992px) and (max-width: 1200px){
 	.widget form input {
 	    width: 124px;
@@ -761,11 +766,6 @@ article.status-fik_checkout{
 	.product-image-frame{
 		padding-right: 0 !important;
 	}
-}
-@media screen and (min-width: 992px){
-    .product-image-frame{
-        min-height: 710px;
-    }
 }
 @media screen and (max-width: 765px){
 	.widget.widget_ns_mailchimp{
