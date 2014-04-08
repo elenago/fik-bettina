@@ -968,10 +968,10 @@ article.status-fik_checkout{
 }
 
 .carousel-indicators {
-    bottom: 0;
-    top: none;
+    bottom: 15;
+    top: auto !important;
 }
 
 .carousel-control {
-    border: 0px solid #FFFFFF;
+    border: 0 !important;
 }
