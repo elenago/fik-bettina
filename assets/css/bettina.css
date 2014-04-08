@@ -593,7 +593,7 @@ footer div > .widget{
 }
 .product-image-frame{
 	position: relative;
-	padding-bottom: 50px;
+	/*padding-bottom: 50px;*/
 }
 .product-image-frame:hover .product-price .price .amount, .product-title a{
 	display: inline;
@@ -751,6 +751,12 @@ article.status-fik_checkout{
 	.titulo{
 	    padding: 0 !important;
 	    width: 150px;
+	}
+	.product-image-frame img{
+		width: 100%;
+	}
+	.product-image-frame{
+		padding-right: 0 !important;
 	}
 }
 
