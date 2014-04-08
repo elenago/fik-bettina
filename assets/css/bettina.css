@@ -975,3 +975,7 @@ article.status-fik_checkout{
 .carousel-control {
     border: 0 !important;
 }
+
+#homearticle {
+    padding-right: 0 !important;
+}
