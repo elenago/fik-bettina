@@ -602,7 +602,7 @@ footer div > .widget{
 .archive .product-image-frame:hover .product-title{
 	display: block;
 	z-index: 10;
-    bottom: 290px;
+    bottom: 340px;
 }
 
 /*Producto*/
@@ -760,6 +760,12 @@ article.status-fik_checkout{
 	}
 	.product-image-frame{
 		padding-right: 0 !important;
+	}
+	.product-image-frame:hover .product-price .price, .product-title{
+		bottom: 300px;
+	}
+	.archive .product-image-frame:hover .product-title{
+		bottom: 400px;
 	}
 }
 
@@ -959,7 +965,12 @@ article.status-fik_checkout{
     .product-image-frame{
         min-height: 710px;
     }
-}
+}		.product-image-frame img{
+		width: 100%;
+	}
+	.product-image-frame{
+		padding-right: 0 !important;
+	}
 
 .nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
     background-color: #FFFFFF;
