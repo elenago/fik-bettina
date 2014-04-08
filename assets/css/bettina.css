@@ -972,6 +972,10 @@ article.status-fik_checkout{
     top: auto !important;
 }
 
+.carousel-indicators .active {
+    margin-left: 5px;
+}
+
 .carousel-control {
     border: 0 !important;
 }
