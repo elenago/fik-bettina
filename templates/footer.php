@@ -16,7 +16,7 @@
     <?php dynamic_sidebar('sidebar-footer-right'); ?>
     <div class="copyright col-lg-2 pull-right">
     	<p class="">&copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?></p>
-    	<p class="">Diseño | FLUXOP</p>
+    	<p class=""><a href="http://www.fluxop.com/">Diseño | FLUXOP</a></p>
     <div class="pull-right"><?php the_fikstores_badge(); ?></div>
     </div>
     <?php wp_footer(); ?>
