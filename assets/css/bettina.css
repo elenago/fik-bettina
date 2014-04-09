@@ -147,7 +147,7 @@ a:hover, a:active{
 .social .face a, .social1 .face a{
 	background-position:-2px 0;
 }
-.social .twitter, .social1 .twitter a{
+.social .twitter a, .social1 .twitter a{
 	background-position:-23px 0;
 }
 .social .instagram a,.social1 .instagram a{
@@ -244,9 +244,6 @@ a:hover, a:focus, .nav-pills > li.active > a:hover{
 .dropdown-menu > li > a:hover{
 	color: #C10D27;
 	background: none !important;
-}
-.dropdown-menu a:first-letter{
-	text-transform: uppercase;
 }
 .dropdown-menu > .active > a{
 	background: transparent;
@@ -543,6 +540,7 @@ footer div > .widget{
     border: none;
     color: #a31127;
     background: transparent;
+    font-size: 15px;
 }
 .cart_item_update {
     margin-left: 9px;
@@ -1015,13 +1013,28 @@ article.status-fik_checkout{
 }
 
 /* Carousel */
+.carousel{
+	margin-bottom: 40px;
+}
 .carousel-caption {
     display: none;
 }
 
 .carousel-indicators {
-    bottom: 15;
+    bottom: -25px;
     top: auto !important;
+}
+
+.carousel-indicators li{
+	background: #808080;
+	border: none;
+}
+.carousel-indicators li.active {
+	background:#a31127;
+	margin-right: 10px;
+	border-radius: 50px;
+	height: 10px;
+	width: 10px;
 }
 
 .carousel-indicators .active {
@@ -1029,7 +1042,7 @@ article.status-fik_checkout{
 }
 
 .carousel-control {
-    border: 0 !important;
+    display: none;
 }
 
 #homearticle {
