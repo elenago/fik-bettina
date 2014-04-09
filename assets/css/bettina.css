@@ -42,6 +42,9 @@ a:hover, a:active{
 	padding: 0 15px 15px 15px;
 	font-size: 12px;
 }
+.titulo{
+	margin-top: 7px;
+}
 .lang{
 	text-align: right;
 }
@@ -1026,7 +1029,7 @@ article.status-fik_checkout{
 
 /* Carousel */
 .carousel{
-	margin-bottom: 40px;
+	margin-bottom: 40px !important;
 }
 .carousel-caption {
     display: none;
