@@ -551,8 +551,10 @@ footer div > .widget{
 
 .fik_add_cart .button, .button:hover {
     border: none;
-    color: #a31127;
     background: transparent;
+}
+.button:hover {
+    color: #a31127;
 }
 .button{
 	font-size: 15px;
@@ -588,7 +590,7 @@ footer div > .widget{
 	display: none;
 }
 .product-image-frame:hover .list-product-hover{
-	background-color: rgba(165, 21, 43, 0.5);
+	background-color: rgba(163, 17, 39, 0.5);
 	height: 200px;
 	width: 100%;
 	display: block;
@@ -633,13 +635,16 @@ footer div > .widget{
     width: 100%;
     bottom: 240px;
     color: white;
+    font-size: 18px;
     text-align: center;
+    text-transform: uppercase;
 }
 .product-image-frame:hover .product-price .price{
 	display: block;
 	height: 220px;
+	font-size: 18px;
 	padding-top: 170px;
-	background-color: rgba(165, 21, 43, 0.5);
+	background-color: rgba(163, 17, 39, 0.5);
 }
 .product-price .price{
 	display: none;
@@ -651,6 +656,7 @@ footer div > .widget{
 .product-image-frame:hover .product-price .price .amount, .product-title a{
 	display: inline;
 	color: white;
+	font-size: 18px;
 }
 .archive .product-image-frame:hover .product-title{
 	display: block;
