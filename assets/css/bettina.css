@@ -468,9 +468,7 @@ footer div > .widget{
     text-transform: lowercase;
     color: #808080;
 }
-.single .entry-content img{
-	margin-bottom: 30px;
-}
+
 .avatar{
 	display: none;
 }
@@ -530,7 +528,13 @@ footer div > .widget{
     padding-right: 0;
     
 }
-
+.sizesandshippings li{
+	padding-bottom: 10px; 
+}
+.sizesandshippings a{
+	padding-right: 26px;
+	color: #808080;
+}
 .sizesandshippingsmodal {
     position: relative;
 }
@@ -557,6 +561,7 @@ footer div > .widget{
 }
 .fik_add_cart .button{
 	padding-top: 9px;
+	padding-right: 0;
 }
 .button:hover {
     color: #a31127;
@@ -581,6 +586,9 @@ footer div > .widget{
     border: none;
 }
 
+#descr > div.entry-content{
+	padding: 6px 13px;
+}
 .product-gallery .entry-content{
 	margin-bottom: 20px;
 }
@@ -675,7 +683,6 @@ footer div > .widget{
 .thumbnails{
 	padding-left: 0;
 	margin: 0 auto;
-	width: 88%;
 }
 .thumbnail{
 	margin: 0 7px 0 7px;
