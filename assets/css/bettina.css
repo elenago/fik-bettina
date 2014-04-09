@@ -1,5 +1,5 @@
 /*CSS*/
-
+/*#a31127;*/
 body *{
 	color: #929292;
 	font-family: "Raleway";
@@ -147,7 +147,7 @@ a:hover, a:active{
 .social .face a, .social1 .face a{
 	background-position:-2px 0;
 }
-.social .twitter, .social1 .twitter a{
+.social .twitter a, .social1 .twitter a{
 	background-position:-23px 0;
 }
 .social .instagram a,.social1 .instagram a{
@@ -202,7 +202,7 @@ a:hover, a:active{
 	font-size: 15px;
 }
 .sidebar .nav a{
-	font-size: 15px;
+	font-size: 14px;
 }
 .nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus{
 	background: transparent;
@@ -245,9 +245,6 @@ a:hover, a:focus, .nav-pills > li.active > a:hover{
 	color: #C10D27;
 	background: none !important;
 }
-.dropdown-menu a:first-letter{
-	text-transform: uppercase;
-}
 .dropdown-menu > .active > a{
 	background: transparent;
 	color: #C10D27;
@@ -287,6 +284,7 @@ a:hover, a:focus, .nav-pills > li.active > a:hover{
     text-align: right;
     text-transform: uppercase;
     margin-top:6px;
+    font-weight: 400 !important;
 }
 .widget form label{
 	display: none;
@@ -540,8 +538,9 @@ footer div > .widget{
 
 .fik_add_cart .button, .button:hover {
     border: none;
-    text-transform: uppercase;
+    color: #a31127;
     background: transparent;
+    font-size: 15px;
 }
 .cart_item_update {
     margin-left: 9px;
@@ -568,7 +567,46 @@ footer div > .widget{
 	background: #D6D7D8;
 	color: #929292;
 }
+
 /*List products*/
+/*.product-image-frame .list-product-hover .product-price .price{
+	display: none;
+}
+.product-image-frame:hover .list-product-hover{
+	background-color: rgba(165, 21, 43, 0.5);
+	height: 200px;
+	width: 100%;
+	display: block;
+	position: absolute;
+	bottom: 310px;
+}
+.product-image-frame:hover .list-product-hover h2{
+	display: block;
+	padding-top: 120px;
+}
+.product-image-frame .list-product-hover .product-title{
+	display: none;
+}
+.product-image-frame:hover .list-product-hover .product-price .price, .product-image-frame:hover .list-product-hover .product-title{
+    color: white;
+    text-align: center;
+}
+.product-image-frame:hover .list-product-hover .product-price .price{
+	display: block;
+}
+.product-image-frame{
+	position: relative;
+	padding-bottom: 50px;
+}
+.product-image-frame:hover .list-product-hover .product-price .price .amount{
+	color: white;
+}
+.product-image-frame:hover .list-product-hover .product-title{
+	display: block;
+	z-index: 10;
+    bottom: 350px;
+}*/
+
 .product-price{
 	position: relative;
 }
@@ -604,7 +642,6 @@ footer div > .widget{
 	z-index: 10;
     bottom: 350px;
 }
-
 /*Producto*/
 .single .entry-content img{
 	float: left;
@@ -976,13 +1013,28 @@ article.status-fik_checkout{
 }
 
 /* Carousel */
+.carousel{
+	margin-bottom: 40px;
+}
 .carousel-caption {
     display: none;
 }
 
 .carousel-indicators {
-    bottom: 15;
+    bottom: -25px;
     top: auto !important;
+}
+
+.carousel-indicators li{
+	background: #808080;
+	border: none;
+}
+.carousel-indicators li.active {
+	background:#a31127;
+	margin-right: 10px;
+	border-radius: 50px;
+	height: 10px;
+	width: 10px;
 }
 
 .carousel-indicators .active {
@@ -990,7 +1042,7 @@ article.status-fik_checkout{
 }
 
 .carousel-control {
-    border: 0 !important;
+    display: none;
 }
 
 #homearticle {
