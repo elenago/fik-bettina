@@ -240,6 +240,7 @@ a:hover, a:focus, .nav-pills > li.active > a:hover{
 .dropdown-menu > li > a{
 	text-transform: lowercase;
 	color: #B6B7B8;
+	padding-right: 4px;
 }
 .dropdown-menu > li > a:hover{
 	color: #C10D27;
@@ -298,6 +299,14 @@ a:hover, a:focus, .nav-pills > li.active > a:hover{
 	padding: 0;
     text-align: right;
 }
+/*Mensajes en newsletter*/
+#ns_widget_mailchimp_form-5 p {
+	color: #808080;
+	font-size: 15px;
+	text-align: right;
+	padding-right: 10px;
+	padding-top: 15px;
+}
 
 /*FOOTER*/
 .contact{
@@ -315,6 +324,7 @@ a:hover, a:focus, .nav-pills > li.active > a:hover{
 }
 .m-sidebar .widget li{
 	text-align: right;
+	padding: 5px 0; 
 }
 .widget .active a{
 	color: grey;
@@ -540,7 +550,9 @@ footer div > .widget{
     border: none;
     color: #a31127;
     background: transparent;
-    font-size: 15px;
+}
+.button{
+	font-size: 15px;
 }
 .cart_item_update {
     margin-left: 9px;
@@ -1026,11 +1038,12 @@ article.status-fik_checkout{
 }
 
 .carousel-indicators li{
-	background: #808080;
+	background: #808080 !important;
 	border: none;
+	margin-right: 10px;
 }
 .carousel-indicators li.active {
-	background:#a31127;
+	background:#a31127 !important;
 	margin-right: 10px;
 	border-radius: 50px;
 	height: 10px;
