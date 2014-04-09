@@ -506,7 +506,7 @@ footer div > .widget{
 }
 
 .controls .input-mini{
-	width: 50px;
+	width: 35px;
 }
 .product-gallery .price{
 	padding: 6px;
@@ -516,7 +516,6 @@ footer div > .widget{
 .divprice {
 	background: #D6D7D8;
 	padding: 8px;
-	margin-top: 10px;
 	border: none;
 	border-radius: 0;
 	text-align: left;
@@ -524,9 +523,13 @@ footer div > .widget{
 	display: block;
 }
 
+.sizesandshippings{
+	margin-top: -48px;
+}
+
 .sizesandshippings ul {
     padding-right: 0;
-    
+    margin-bottom: 0;
 }
 .sizesandshippings li{
 	padding-bottom: 10px; 
@@ -679,13 +682,15 @@ footer div > .widget{
 /*Producto*/
 .single .entry-content img{
 	float: left;
+	width: 100%;
 }
 .thumbnails{
 	padding-left: 0;
 	margin: 0 auto;
 }
 .thumbnail{
-	margin: 0 7px 0 7px;
+	margin: 0;
+	width: 50%;
 }
 .thumbnail img{
 	padding-top: 15px;
@@ -749,7 +754,7 @@ article.status-fik_checkout{
 .product-variations .controls{
 	position: relative;
 }
-.product-variations .controls #vv-tallas-vestidos{
+/* .product-variations .controls #vv-tallas-vestidos{
 	text-transform: uppercase;
 	color: #585757;
 	padding: 0;
@@ -759,8 +764,21 @@ article.status-fik_checkout{
 	border-radius: 0;
 	height:20px;
 	-moz-appearance: none;
+}*/
+#vv-tallas-vestidos{
+	height: 42px !important;
+	width: 80px;
+	font-size: 15px !important;
+	padding-left: 15px !important;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	border: 1px solid #dbdbdb;
+	font-weight: 700;
+	color: #6f6f6f;
+	background: url('../img/select-back.png') no-repeat center right #fff;
 }
-.product-variations .controls:after{
+/*.product-variations .controls:after{
 	width: 30px;
 	height: 20px;
 	display: block;
@@ -779,9 +797,9 @@ article.status-fik_checkout{
 	background-repeat: no-repeat;
 	background-position: center center;
 	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
-	-moz-box-sizing: border-box; /* Firefox, other Gecko */
-	box-sizing: border-box; 
-}
+	/*-moz-box-sizing: border-box; /* Firefox, other Gecko */
+	/*box-sizing: border-box; 
+}*/
 .table-striped .input-mini{
 	border: 1px solid #6E707B;
 	width: 50px;
