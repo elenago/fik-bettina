@@ -489,10 +489,19 @@ footer div > .widget{
 .product-quantity{
 	padding-top: 10px;
 }
-
+.product-quantity input {
+	height: 42px !important;
+	width: 54px !important;
+	font-size: 15px !important;
+	padding-left: 15px !important;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	border: 1px solid #dbdbdb;
+}
 .control-label{
 	margin-right: 10px;
-	margin-top: 3px;
+	margin-top: 11px;
 	font-weight: normal;
 	padding-left: 15px;
 	float: left;
@@ -524,7 +533,7 @@ footer div > .widget{
 }
 
 .sizesandshippings{
-	margin-top: -48px;
+	margin-top: -78px;
 }
 
 .sizesandshippings ul {
@@ -532,11 +541,15 @@ footer div > .widget{
     margin-bottom: 0;
 }
 .sizesandshippings li{
-	padding-bottom: 10px; 
+	padding-bottom: 24px;
+
 }
 .sizesandshippings a{
 	padding-right: 26px;
 	color: #808080;
+}
+.sizesandshippings a:hover{
+	color: #a31127;
 }
 .sizesandshippingsmodal {
     position: relative;
@@ -777,6 +790,7 @@ article.status-fik_checkout{
 	font-weight: 700;
 	color: #6f6f6f;
 	background: url('../img/select-back.png') no-repeat center right #fff;
+	border-radius: 0;
 }
 /*.product-variations .controls:after{
 	width: 30px;
