@@ -512,11 +512,12 @@ footer div > .widget{
 }
 .product-gallery .price{
 	padding: 6px;
+	font-size: 18px;
 }
 
 .divprice {
 	background: #D6D7D8;
-	padding: 15px;
+	padding: 8px;
 	margin-top: 10px;
 	border: none;
 	border-radius: 0;
@@ -552,6 +553,10 @@ footer div > .widget{
 .fik_add_cart .button, .button:hover {
     border: none;
     background: transparent;
+    text-transform: uppercase;
+}
+.fik_add_cart .button{
+	padding-top: 9px;
 }
 .button:hover {
     color: #a31127;
