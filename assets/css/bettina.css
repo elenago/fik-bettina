@@ -906,6 +906,22 @@ article.status-fik_checkout{
 	.lang{
 		margin-top: 10px
 	}
+	.dropdown-menu{
+		margin-left: -70px;
+		display: block;
+    	max-width: 160px;
+    	text-align: right;
+	}
+	.dropdown-menu li{
+		display: inline;
+    	min-width: 130px;
+	}
+	.dropdown-menu > li > a{
+		display: inline;
+		white-space: pre-line;
+		float: right;
+    	width: 110px;
+	}
 }
 @media screen and (max-width: 765px){
 	 .logovestido{
