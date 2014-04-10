@@ -1,5 +1,5 @@
 /*CSS*/
-/*#a31127;*/
+/*#a31127; rojo*/
 body *{
 	color: #929292;
 	font-family: "Raleway";
@@ -13,11 +13,11 @@ li{
 }
 h1{
 	font-size: 15px;
-	color: #C10D27;
+	color: #a31127;
 	text-transform: uppercase;
 }
 h2{
-	color: #C10D27;
+	color: #a31127;
     font-size: 16px;
 }
 ol li{
@@ -33,7 +33,7 @@ a:hover, a:active{
 }
 
 .rojo-logo{
-	color: #C10D27;
+	color: #a31127;
 }
 .may{
 	text-transform: uppercase;
@@ -49,7 +49,7 @@ a:hover, a:active{
 	text-align: right;
 }
 .lang .lang-active a, .active a{
-	color: #C10D27;
+	color: #a31127;
 }
 
 .font-header-inf{
@@ -57,6 +57,7 @@ a:hover, a:active{
 }
 .logobettina{
 	margin-left: 15px;
+	padding-left: 23px;
 }
 .description{
 	line-height: 23px;
@@ -91,7 +92,7 @@ a:hover, a:active{
 	border:none;
 }
 .lang .lang-menu a:hover, .blog .blog-menu li a:hover{
-	color: #C10D27;
+	color: #a31127;
 	padding-left: 7px;
 	padding-right: 7px;
 	background: transparent;
@@ -116,7 +117,7 @@ a:hover, a:active{
 	margin-top: 10px;
 }
 .sblog{
-	color: #C10D27;
+	color: #a31127;
 }
 .active > .dropdown-menu {
     display: block;
@@ -209,14 +210,14 @@ a:hover, a:active{
 }
 .nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus{
 	background: transparent;
-	color: #C10D27;
+	color: #a31127;
 }
 
 .sidebar .menu li{
 	width: 150px;
 }
 a:hover, a:focus, .nav-pills > li.active > a:hover{
-	color: #C10D27;
+	color: #a31127;
 }
 .sidebar .nav>li>a{
    padding-right: 10px;
@@ -246,16 +247,16 @@ a:hover, a:focus, .nav-pills > li.active > a:hover{
 	padding-right: 4px;
 }
 .dropdown-menu > li > a:hover{
-	color: #C10D27;
+	color: #a31127;
 	background: none !important;
 }
 .dropdown-menu > .active > a{
 	background: transparent;
-	color: #C10D27;
+	color: #a31127;
 }
 .dropdown-menu > .active > a:hover, .dropdown-menu > .active > a:focus{
 	background: transparent;
-	color: #C10D27;
+	color: #a31127;
 }
 .p-sidebar{
 	color: grey;
@@ -333,7 +334,7 @@ a:hover, a:focus, .nav-pills > li.active > a:hover{
 	color: grey;
 }
 .widget .active a:hover{
-	color: #C10D27;
+	color: #a31127;
 }
 .copyright{
 	text-align: right;
@@ -423,6 +424,11 @@ footer div > .widget{
 	margin-bottom: 80px;
 	color: grey;
 }
+div.alert{
+	box-shadow: none;
+	-webkit-box-shadow: none;
+	-moz-box-shadow:none;
+}
 /*Post*/
 .post img{
 		width: 100%;
@@ -446,7 +452,7 @@ footer div > .widget{
 .pager li > a, .pager li > a:hover{
 	background: transparent;
 	border: none;
-	color: #C10D27;
+	color: #a31127;
 }
 .pager li > a:hover{
 	color: grey;
@@ -533,7 +539,8 @@ footer div > .widget{
 }
 
 .sizesandshippings{
-	margin-top: -78px;
+	margin-top: -46px;
+	margin-bottom: 14px;
 }
 
 .sizesandshippings ul {
@@ -541,8 +548,7 @@ footer div > .widget{
     margin-bottom: 0;
 }
 .sizesandshippings li{
-	padding-bottom: 24px;
-
+	padding-bottom: 8px;
 }
 .sizesandshippings a{
 	padding-right: 26px;
@@ -710,7 +716,7 @@ footer div > .widget{
 	margin: 0 10px;
 }
 .product-gallery .entry-title{
-	color: #C10D27;
+	color: #a31127;
     position: static;
     text-align: left;
     display: block;
@@ -831,6 +837,19 @@ article.status-fik_checkout{
     }
 }
 @media screen and (min-width: 992px) and (max-width: 1200px){
+	 .logovestido{
+ 		width: 18%;
+    	margin-left: -30px;	
+ 	}
+ 	.logovestido img{
+ 		width: 100%;
+ 	}
+ 	.logobettina{
+ 		width: 34%;
+ 	}
+ 	.logobettina img{
+ 		width: 100%;
+ 	}
 	.widget form input {
 	    width: 124px;
 	}
@@ -843,6 +862,19 @@ article.status-fik_checkout{
     }
 }
 @media screen and (min-width: 768px) and (max-width: 992px){
+ 	.logovestido{
+ 		width: 18%;
+    	margin-left: -30px;	
+ 	}
+ 	.logovestido img{
+ 		width: 100%;
+ 	}
+ 	.logobettina{
+ 		width: 34%;
+ 	}
+ 	.logobettina img{
+ 		width: 100%;
+ 	}
  	.widget form input {
 	    width: 87px;
 	}
@@ -868,16 +900,33 @@ article.status-fik_checkout{
 	.product-image-frame{
 		padding-right: 0 !important;
 	}
+	.social{
+		margin-top: 17px;
+	}
+	.lang{
+		margin-top: 10px
+	}
 }
 @media screen and (max-width: 765px){
+	 .logovestido{
+ 		width: 150px;
+ 	}
+ 	.logovestido img{
+ 		width: 100%;
+ 	}
+ 	.logobettina{
+ 		padding-top: 1px;
+    	width: 280px;
+ 	}
+ 	.logobettina img{
+ 		width: 100%;
+ 	}
 	.widget.widget_ns_mailchimp{
 		display: none;
 	}
-	.logobettina{
-		width: 80%;
-	}
-	.logobettina img{
-		float: left;
+
+	.logovestido{
+
 	}
 	.banner-bettina{
 		margin-top: 40px;
@@ -1063,7 +1112,23 @@ article.status-fik_checkout{
 		text-align: left !important ;
 	}
 }
-
+@media screen and (max-width: 515px){
+	.logovestido{
+		width: 120px;
+	}
+	.logobettina {
+	    width: 238px;
+	}
+}
+@media screen and (max-width: 432px){
+	.logovestido{
+		width: 100px;
+	}
+	.logobettina {
+	    width: 192px;
+	    padding-top: 0;
+	}
+}
 .nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
     background-color: #FFFFFF;
 }
