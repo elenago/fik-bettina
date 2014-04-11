@@ -38,6 +38,7 @@ a:hover, a:active{
 .may{
 	text-transform: uppercase;
 }
+/*HEADER*/
 .banner-bettina{
 	padding: 0 15px 15px 15px;
 	font-size: 12px;
@@ -190,7 +191,7 @@ a:hover, a:active{
 	width: 100%;
 	display: inline;
 }
-.sidebar .nav-pills li{
+.sidebar .navbar-nav li{
 	margin: 5px 0;
 	padding: 0;
 }
@@ -208,7 +209,7 @@ a:hover, a:active{
 .sidebar .nav a{
 	font-size: 14px;
 }
-.nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus{
+.navbar-nav > li.active > a, .navbar-nav > li.active > a:hover, .navbar-nav > li.active > a:focus{
 	background: transparent;
 	color: #a31127;
 }
@@ -216,11 +217,13 @@ a:hover, a:active{
 .sidebar .menu li{
 	width: 150px;
 }
-a:hover, a:focus, .nav-pills > li.active > a:hover{
+a:hover, a:focus, .navbar-nav > li.active > a:hover{
 	color: #a31127;
 }
 .sidebar .nav>li>a{
    padding-right: 10px;
+   padding-top: 0;
+   padding-bottom: 0;
 }
 .nav >li >a{
 	padding: 5px 10px;
@@ -281,6 +284,16 @@ a:hover, a:focus, .nav-pills > li.active > a:hover{
 	width: 100%;
 }
 
+.navbar{
+	background: transparent;
+	border:none;
+}
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus{
+	background: transparent;
+}
+.navbar-nav > li {
+    text-transform: uppercase;
+}
 /*Newsletter*/
 
 .widget h3{
@@ -837,6 +850,13 @@ article.status-fik_checkout{
     }
 }
 @media screen and (min-width: 992px) and (max-width: 1200px){
+	.sidebar .navbar-nav .dropdown .dropdown-menu{
+	    left: -6px;
+	}
+	.navbar-nav{
+		left: -24px;
+    	position: relative;
+	}
 	 .logovestido{
  		width: 18%;
     	margin-left: -30px;	
@@ -853,10 +873,7 @@ article.status-fik_checkout{
 	.widget form input {
 	    width: 124px;
 	}
-	.sidebar .nav-pills .dropdown .dropdown-menu{
-		left: -34px;
-    	top: 0;
-	}
+
     .product-image-frame{
         min-height: 590px;
     }
@@ -908,7 +925,6 @@ article.status-fik_checkout{
 	}
 	.dropdown-menu{
 		margin-left: -70px;
-		display: block;
     	max-width: 160px;
     	text-align: right;
 	}
@@ -922,9 +938,32 @@ article.status-fik_checkout{
 		float: right;
     	width: 110px;
 	}
+	.m-sidebar .menu li {
+    	width: 110px;
+	}
 }
 @media screen and (max-width: 765px){
-	 .logovestido{
+
+	.navbar-collapse.collapse{
+		height: auto;
+		overflow: visible !important;
+		border-top: 1px solid #808080;
+ 	    margin: 0 0 20px 0;
+	}
+	.navbar{
+		border-top: 1px solid #808080;
+	}
+	.navbar-toggle{
+		border:none;
+	}
+	.container-fluid .navbar-header{
+		width: 80px;
+		margin: 0 auto;
+	}
+	.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus{
+		background: transparent;
+	}
+	.logovestido{
  		width: 150px;
  	}
  	.logovestido img{
@@ -940,19 +979,24 @@ article.status-fik_checkout{
 	.widget.widget_ns_mailchimp{
 		display: none;
 	}
-
-	.logovestido{
-
-	}
 	.banner-bettina{
-		margin-top: 40px;
-		padding-bottom: 0;
+	    border-top: 1px solid #808080;
+	    margin: 65px 15px 0;
+	    padding-bottom: 0;
 	}
-	.lang .nav-pills{
-		margin-top: 6px;
+	.lang ul{
+		padding-top: 0 !important;
 	}
-	.blog-menu{
-		border-top: 1px solid #808080;
+	.lang{
+		float: left;
+	}
+	.titulo{
+		float: right;
+		margin-top: 0;
+		padding-left: 15px;
+	}
+	.container-fluid{
+		border-bottom: 1px solid #808080;
 	}
 	.blog-menu li{
 		width: 45%;
@@ -964,8 +1008,8 @@ article.status-fik_checkout{
 		margin: 20px 0;
 		height: 40px;
 	}
-	.lang{
-		margin-top: 20px;
+	.lang ul{
+		    padding-top: 9px;
 	}
 	.main article{
 		padding: 0 !important;
@@ -1000,12 +1044,9 @@ article.status-fik_checkout{
 		margin: 5px 0px 20px 0;
 		padding: 0 20px;
 	}
-	.social1 .nav-pills{
+	.fcontainer .social1 .nav-pills{
 		margin: 10px auto;
 		width: 120px;
-	}
-	.titulo{
-		padding-left: 15px;
 	}
 	.type-fik_product #descr{
 		padding-right: 0 !important;
@@ -1014,31 +1055,32 @@ article.status-fik_checkout{
 		margin-top: 0;
 		margin-bottom: 30px;
 	}
-	.sidebar .menu > li > a, .nav-pills.blog-menu > li > a,.sidebar .nav-pills > li > a, .nav-pills > li > a:hover, .nav-pills > li > a:focus, .nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus, .nav-pills li > a.dropdown-toggle{
+	.sidebar .menu > li > a, .navbar-nav.blog-menu > li > a,.sidebar .navbar-nav > li > a, .navbar-nav > li > a:hover, .navbar-nav > li > a:focus, .navbar-nav > li.active > a, .navbar-nav > li.active > a:hover, .navbar-nav > li.active > a:focus, .navbar-nav li > a.dropdown-toggle{
 		color: #929292;
 		text-align: center;
 		border-radius: 0;
 	}
-	.sidebar > ul.nav-pills > li:first-child >a{
+	.sidebar > ul.navbar-nav > li:first-child >a{
 		border-top: 1px solid #808080;
 	}
-	.sidebar > ul.nav-pills > li:last-child >a{
+	.sidebar > ul.navbar-nav > li:last-child >a{
 		border-bottom: 1px solid #808080;
 	}
 	.dropdown-menu > li > a{
 		text-align: center;
+		padding-left: 0;
 	}
-	.sidebar .nav-pills li{
+	.sidebar .navbar-nav li{
 		margin-left: 0;
 	}
-	.sidebar .nav-pills .dropdown-menu{
+	.sidebar .navbar-nav .dropdown-menu{
 		width: 100%;
 	}
-	.sidebar .nav-pills .dropdown-menu > .active > a{
+	.sidebar .navbar-nav .dropdown-menu > .active > a{
 		text-align: center;
 		color: #929292;
 	}
-	.sidebar .nav-pills .dropdown-menu > .anchomenu > a{
+	.sidebar .navbar-nav .dropdown-menu > .anchomenu > a{
 		margin-left: 0;
 	}
 	.sidebar .m-sidebar, .sidebar .fm-sidebar{
@@ -1067,6 +1109,9 @@ article.status-fik_checkout{
 	}
 	.sidebar .menu > li:last-child{
 		float: right !important;
+	}
+	.sidebar .nav > li > a {
+	    padding-top: 10px;
 	}
 	.p-sidebar{
 		margin: 0;
@@ -1098,7 +1143,7 @@ article.status-fik_checkout{
 	.main{
 		width: 100%;
 	}
-	.single .sidebar .nav-pills li{
+	.single .sidebar .navbar-nav li{
 		margin-top: 10px;
 	}
 	.status-fik_checkout{

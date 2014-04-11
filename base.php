@@ -17,7 +17,28 @@
         <div class="sidebar <?php echo roots_sidebar_class(); ?>">
         <?php
           if (has_nav_menu('primary_navigation')) :
-            wp_nav_menu(array('theme_location' => 'primary_navigation', 'menu_class' => 'nav nav-pills'));
+            ?>
+            <nav class="navbar navbar-default" role="navigation">
+              <div class="container-fluid no-padding">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse no-padding" id="bs-example-navbar-collapse-1">
+            <?php
+            wp_nav_menu(array('theme_location' => 'primary_navigation', 'menu_class' => 'nav navbar-nav'));
+            ?>
+              </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+          </nav>
+            <?php
           endif;
         ?>
           <aside class="m-sidebar" role="complementary">
