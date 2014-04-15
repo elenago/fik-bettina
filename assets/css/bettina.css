@@ -1285,6 +1285,25 @@ article.status-fik_checkout{
 		display: block;
     	width: 300px;
 	}
+	.legal a{
+		font-size: 12px;
+	}
+	.contact{
+		font-size: 12px;
+	}
+	.entry-title, .product-gallery .price, .button{
+		font-size: 14px;
+	}
+	.product-image-frame:hover .product-price .price, .product-title {
+	    bottom: 150px;
+	}
+	.product-image-frame:hover .product-price .price {
+	    height: 150px;
+	    padding-top: 110px;
+	}
+	.archive .product-image-frame:hover .product-title {
+	    bottom: 240px;
+	}
 }
 .nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
     background-color: #FFFFFF;
