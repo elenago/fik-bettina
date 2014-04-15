@@ -31,12 +31,13 @@
   <div class="row presponsive">
      <div class="font-header-inf may description col-lg-7 no-padding-left">
          <?php if(roots_display_sidebar()): ?>
-            <a href="<?php echo home_url('/') ?>" class="logovestido pull-left"><img src="/wp-content/themes/fik-bettina/assets/img/logovestido.png" class=""></a>
-            <a href="<?php echo home_url('/') ?>" class="logobettina pull-left"><img src="/wp-content/themes/fik-bettina/assets/img/logobettina.png" class=""></a>
+            <a href="<?php echo home_url('/') ?>" class="logovestido pull-left"><img src="/wp-content/themes/fik-bettina/assets/img/logovestido.png"></a>
+            <a href="<?php echo home_url('/') ?>" class="logobettina pull-left"><img src="/wp-content/themes/fik-bettina/assets/img/logobettina.png"></a>
 
              <!--<a href="<?php echo home_url('/') ?>" class="logobettina pull-left"><img src="/wp-content/themes/fik-bettina/assets/img/logo.png" class="img-responsive"></a>-->
          <?php else: ?>
-             <a href="<?php echo home_url('/blog/') ?>" class="logobettina pull-left"><img src="/wp-content/themes/fik-bettina/assets/img/logoblog.png" class="img-responsive"></a>
+             <a href="<?php echo home_url('/blog/') ?>" class="logobettina pull-left"><img src="/wp-content/themes/fik-bettina/assets/img/logoblog.png"></a>
+            <a href="<?php echo home_url('/blog/') ?>" class="logobettina pull-left"><img src="/wp-content/themes/fik-bettina/assets/img/logoblogbettina.png"></a>
          <?php endif; ?>
      </div>
    

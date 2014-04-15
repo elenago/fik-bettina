@@ -820,7 +820,7 @@ article.status-fik_checkout{
 	height:20px;
 	-moz-appearance: none;
 }*/
-#vv-tallas-vestidos{
+#vv-tallas-vestidos, #vv-tallas-zapatos{
 	height: 42px !important;
 	width: 80px;
 	font-size: 15px !important;
@@ -984,6 +984,16 @@ article.status-fik_checkout{
 	.archive .product-image-frame:hover .product-title{
 		bottom: 400px;
 	}
+	.fik_add_cart.divprice div:last-child{
+		width: auto;
+    	display: inline;
+    	float: right;
+    	bottom: 6px;
+	}
+	.fik_add_cart.divprice div:first-child{
+		width: auto;
+		display: inline;
+	}
 }
 @media screen and (max-width: 765px){
 
@@ -1037,6 +1047,7 @@ article.status-fik_checkout{
 		float: right;
 		margin-top: 0;
 		padding-left: 15px;
+		padding-top: 5px;
 	}
 	.container-fluid{
 		border-bottom: 1px solid #808080;
@@ -1225,6 +1236,16 @@ article.status-fik_checkout{
 	.archive .product-image-frame:hover .product-title{
 		bottom: 290px;
 	}
+		.fik_add_cart.divprice div:last-child{
+		width: auto;
+    	display: inline;
+    	float: right;
+    	bottom: 6px;
+	}
+	.fik_add_cart.divprice div:first-child{
+		width: auto;
+		display: inline;
+	}
 }
 @media screen and (max-width: 515px){
 	.logovestido{
@@ -1241,6 +1262,28 @@ article.status-fik_checkout{
 	.logobettina {
 	    width: 192px;
 	    padding-top: 0;
+	}
+}
+@media screen and (max-width: 360px){
+	.lang{
+		padding: 0 !important;
+    	font-size: 10px;
+	}
+	.titulo{
+		font-size: 10px;
+		padding-right: 0;
+		padding-left: 0;
+	}
+	.widget .p-sidebar:first-child{
+		padding-top: 20px !important;
+	}
+	.legal{
+		text-align: left;
+	}
+	.legal .menu{
+		padding-left: 0;
+		display: block;
+    	width: 300px;
 	}
 }
 .nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
