@@ -79,6 +79,9 @@ a:hover, a:active{
     padding-right: 30px;
     padding-top: 8px;
 }
+.cesta span:hover{
+	color: #a31127;
+}
 .lang .lang-menu a, .blog .blog-menu li a{
 	padding: 0 7px;
 }
@@ -119,9 +122,6 @@ a:hover, a:active{
 }
 .sblog{
 	color: #a31127;
-}
-.active > .dropdown-menu {
-    display: block;
 }
 /*SOCIAL*/
 .fcontainer{
@@ -184,6 +184,7 @@ a:hover, a:active{
 
 /*SIDEBAR*/
 /*Menu primary*/
+
 .sidebar{
 	margin-top: 18px;
 }
@@ -198,9 +199,7 @@ a:hover, a:active{
 .sidebar li a{
 	text-align: right;
 }
-.sidebar li.active ul{
-	display: block;
-}
+
 .sidebar > .nav{
 	text-transform: uppercase;
 	line-height: 14px;
@@ -294,6 +293,9 @@ a:hover, a:focus, .navbar-nav > li.active > a:hover{
 .navbar-nav > li {
     text-transform: uppercase;
 }
+.navbar-nav > li > a{
+	line-height: 25px;
+}
 /*Newsletter*/
 
 .widget h3{
@@ -315,6 +317,9 @@ a:hover, a:focus, .navbar-nav > li.active > a:hover{
 	border: none;
 	padding: 0;
     text-align: right;
+}
+.widget form input.button:hover{
+	text-transform: lowercase; 
 }
 /*Mensajes en newsletter*/
 #ns_widget_mailchimp_form-5 p {
@@ -381,10 +386,17 @@ a:hover, a:focus, .navbar-nav > li.active > a:hover{
 
 footer{
 	margin-bottom: 30px;
+	margin-top: 40px;
 }
 
 /*Páginas legal*/
-
+.main .contentstatic h3{
+	font-size: 13px;
+	color: #A31127;
+}
+.main .contentstatic iframe{
+	margin: 20px 0;
+}
 .page-header{
 	margin-top: 0;
 	padding: 0;
@@ -395,6 +407,7 @@ footer{
 }
 .contentstatic{
 	padding-left: 0;
+	margin: 0 0 40px;
 }
 
 footer div > .widget{
@@ -632,6 +645,10 @@ div.alert{
 	background: #D6D7D8;
 	color: #929292;
 }
+/*Zoom*/
+.zoomContainer .zoomWindowContainer .zoomWindow{
+	 border: 1px solid #888888 !important;
+}
 
 /*List products*/
 /*.product-image-frame .list-product-hover .product-price .price{
@@ -770,7 +787,13 @@ article.status-fik_checkout{
 	color: #6E7072;
 	margin-bottom: 20px;
 	border: none;
+	text-transform: lowercase;
 }
+.status-fik_checkout .fik_to_checkout .button:hover{
+	color: #a31127;
+	text-transform: lowercase;
+}
+
 .table > caption + thead > tr:first-child > th, .table > colgroup + thead > tr:first-child > th, .table > thead:first-child > tr:first-child > th, .table > caption + thead > tr:first-child > td, .table > colgroup + thead > tr:first-child > td, .table > thead:first-child > tr:first-child > td{
 	border:none;
 }
@@ -877,6 +900,16 @@ article.status-fik_checkout{
     .product-image-frame{
         min-height: 590px;
     }
+    .product-image-frame:hover .product-price .price {
+	    height: 180px;
+	    padding-top: 140px;
+	}
+	.product-image-frame:hover .product-price .price, .product-title {
+	    bottom: 180px;
+	}
+	.archive .product-image-frame:hover .product-title{
+		bottom: 270px;
+	}
 }
 @media screen and (min-width: 768px) and (max-width: 992px){
  	.logovestido{
@@ -940,6 +973,16 @@ article.status-fik_checkout{
 	}
 	.m-sidebar .menu li {
     	width: 110px;
+	}
+	.product-image-frame:hover .product-price .price {
+	    height: 240px;
+	    padding-top: 200px;
+	}
+	.product-image-frame:hover .product-price .price, .product-title {
+	    bottom: 310px;
+	}
+	.archive .product-image-frame:hover .product-title{
+		bottom: 400px;
 	}
 }
 @media screen and (max-width: 765px){
@@ -1172,6 +1215,16 @@ article.status-fik_checkout{
 	.fm-sidebar .widget .menu li:last-child{
 		text-align: left !important ;
 	}
+    .product-image-frame:hover .product-price .price {
+	    height: 180px;
+	    padding-top: 140px;
+	}
+	.product-image-frame:hover .product-price .price, .product-title {
+	    bottom: 200px;
+	}
+	.archive .product-image-frame:hover .product-title{
+		bottom: 290px;
+	}
 }
 @media screen and (max-width: 515px){
 	.logovestido{
@@ -1214,6 +1267,7 @@ article.status-fik_checkout{
 .carousel-indicators {
     bottom: -25px;
     top: auto !important;
+    left: 46% !important;
 }
 
 .carousel-indicators li{
