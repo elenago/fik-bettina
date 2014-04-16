@@ -36,7 +36,7 @@
 
              <!--<a href="<?php echo home_url('/') ?>" class="logobettina pull-left"><img src="/wp-content/themes/fik-bettina/assets/img/logo.png" class="img-responsive"></a>-->
          <?php else: ?>
-             <a href="<?php echo home_url('/blog/') ?>" class="logobettina pull-left"><img src="/wp-content/themes/fik-bettina/assets/img/logoblog.png"></a>
+             <a href="<?php echo home_url('/blog/') ?>" class="logobettina pull-left"><img src="/wp-content/themes/fik-bettina/assets/img/logoblog2.png"></a>
             <a href="<?php echo home_url('/blog/') ?>" class="logobettina pull-left"><img src="/wp-content/themes/fik-bettina/assets/img/logoblogbettina.png"></a>
          <?php endif; ?>
      </div>
