@@ -1331,7 +1331,7 @@ article.status-fik_checkout{
 	}
 }
 .nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
-    background-color: #FFFFFF;
+    background-color: #FFFFFF !important;
 }
 
 .fik_product .product-gallery .header-product h1.entry-title{
