@@ -123,6 +123,10 @@ a:hover, a:active{
 .sblog{
 	color: #a31127;
 }
+.nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus{
+	background: #fff !important;
+	color: #808080 !important;
+}
 /*SOCIAL*/
 .fcontainer{
 	display: none;
@@ -282,7 +286,9 @@ a:hover, a:focus, .navbar-nav > li.active > a:hover{
 .img-home{
 	width: 100%;
 }
-
+.home footer{
+    margin-top: 0;
+}
 .navbar{
 	background: transparent;
 	border:none;
@@ -1019,6 +1025,7 @@ article.status-fik_checkout{
 		width: auto;
 		display: inline;
 	}
+
 }
 @media screen and (max-width: 765px){
 
