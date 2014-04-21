@@ -162,6 +162,7 @@ jQuery(document).ready(function() {
             itemsQuantity = "&nbsp";
         }
         jQuery('.cesta').append(' <span class="badge">' + itemsQuantity + '</span>');
-
     }
+
+    jQuery("input[name='ns_widget_mailchimp_email']").attr("placeholder", "Email");
 });
