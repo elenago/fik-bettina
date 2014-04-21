@@ -31,6 +31,8 @@ function roots_scripts() {
   wp_enqueue_script('modernizr');
   wp_enqueue_script('jquery');
   wp_enqueue_script('roots_scripts');
+  wp_register_script('fik_common', get_template_directory_uri() . '/assets/js/common.js');
+  wp_enqueue_script('fik_common');
   if ( 'fik_product' == get_post_type() ){ 
     wp_register_script('elevateZoom', get_template_directory_uri() . '/assets/js/plugins/jquery.elevateZoom.min.js', array(), null, false);
     wp_enqueue_script('elevateZoom');

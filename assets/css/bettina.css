@@ -76,11 +76,19 @@ a:hover, a:active{
 .cesta{
 	background:url('../img/cesta.png') scroll no-repeat right top transparent;
     height: 26px;
-    padding-right: 30px;
     padding-top: 8px;
 }
 .cesta span:hover{
 	color: #a31127;
+}
+.badge {
+    position: relative;
+    top: -2px;
+    background-color: transparent;
+    padding-right: 7px;
+    line-height: 1.1;
+    min-width: 30px;
+    text-align: right;
 }
 .lang .lang-menu a, .blog .blog-menu li a{
 	padding: 0 7px;
