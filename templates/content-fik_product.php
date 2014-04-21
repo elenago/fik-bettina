@@ -32,7 +32,7 @@
             <div itemprop="description" class="entry-content">
                 <?php echo $post->post_content; ?>
 
-                <?php the_product_gallery_thumbnails('150-thumbnail', array('class'=>'img-responsive'), 'full'); ?>
+                <?php the_product_gallery_thumbnails('150-thumbnail', array('class'=>'img-responsive'), 'large'); ?>
                 <?php wp_link_pages( array( 'before' => '<div class="page-links">' . __( 'Pages:', 'twentytwelve' ), 'after' => '</div>' ) ); ?>
             </div><!-- .entry-content -->
             <div class="price-and-purchase">
