@@ -44,6 +44,23 @@ class Roots_Nav_Walker extends Walker_Nav_Menu {
     if ($element->is_dropdown) {
       $element->classes[] = 'dropdown';
     }
+    if ($element->current_item_parent || $element->current_item_ancestor || $element->current) {
+        $element->classes[] = 'open';
+    }
+    $post = get_post();
+    $terms = get_the_terms($post->id, 'store-section');
+    if(is_array($terms)) {
+        foreach($terms as $term) {
+            $term_link = get_term_link($term);
+            $term_link_parent = substr($term_link, 0, strrpos($term_link, '/', 0) + 1);
+            if($element->url == $term_link) {
+                $element->classes[] = 'active';
+            }
+            if($element->url == $term_link_parent) {
+                $element->classes[] = 'open';
+            }
+        }
+    }
 
     parent::display_element($element, $children_elements, $max_depth, $depth, $args, $output);
   }
