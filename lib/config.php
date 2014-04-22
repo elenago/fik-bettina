@@ -114,6 +114,7 @@ function roots_display_sidebar2() {
     array(
       'is_404',
       'is_archive',
+      'is_page',
       'is_front_page',
       'is_front_page',
       array('is_singular', array('fik_product')),
