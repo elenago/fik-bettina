@@ -523,9 +523,11 @@ div.alert{
 	color: grey;
 }
 /*Single*/
+.single .post .entry-title{
+	padding-left: 25px;
+}
 .cabsingle{
-	background: #D6D7D8;
-	padding:15px 25px;
+	padding:0 25px 0;
 }
 .cabsingle *{
 	color: #19161B;
@@ -683,10 +685,16 @@ div.alert{
 .fik_to_checkout .button {
 	background: #D6D7D8;
 	color: #929292;
+	text-transform: lowercase;
+}
+.fik_to_checkout .button:hover {
+	background: #D6D7D8;
+	color: #a31127;
+	text-transform: lowercase;
 }
 /*Zoom*/
 .zoomContainer .zoomWindowContainer .zoomWindow{
-	 border: 1px solid #888888 !important;
+	border: 1px solid #888888 !important;
 }
 
 /*List products*/
@@ -768,6 +776,7 @@ div.alert{
     bottom: 350px;
 }
 /*Producto*/
+
 .single .entry-content img{
 	float: left;
 	width: 100%;
