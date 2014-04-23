@@ -12,8 +12,8 @@
 
 <article <?php post_class(); ?>>
   <header>
-        <?php get_template_part('templates/entry-meta'); ?>
         <h2 class="entry-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+        <?php get_template_part('templates/entry-meta'); ?>
   </header>
   <div class="entry-content imgpost">
       <?php the_post_thumbnail('460-thumbnail', array('class'=>'img-responsive')); ?>
