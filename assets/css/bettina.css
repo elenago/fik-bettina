@@ -220,7 +220,7 @@ a:hover, a:active{
 .sidebar .nav a{
 	font-size: 14px;
 }
-.navbar-nav > li.active > a, .navbar-nav > li.active > a:hover, .navbar-nav > li.active > a:focus{
+.navbar-default .navbar-nav > li.active > a, .navbar-nav > li.active > a:hover, .navbar-nav > li.active > a:focus{
 	background: transparent;
 	color: #a31127;
 }
@@ -260,14 +260,18 @@ a:hover, a:focus, .navbar-nav > li.active > a:hover{
 	color: #B6B7B8;
 	padding-right: 4px;
 }
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus,
+.navbar-default .navbar-nav > li > a:hover,
 .dropdown-menu > li > a:hover{
 	color: #a31127;
 	background: none !important;
 }
+.active,
 .dropdown-menu > .active > a{
 	background: transparent;
 	color: #a31127;
 }
+.active,
 .dropdown-menu > .active > a:hover, .dropdown-menu > .active > a:focus{
 	background: transparent;
 	color: #a31127;

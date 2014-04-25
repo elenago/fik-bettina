@@ -66,6 +66,63 @@ class Roots_Nav_Walker extends Walker_Nav_Menu {
   }
 }
 
+class Fik_Roots_Nav_Walker extends Roots_Nav_Walker {
+  private $current_item_id;
+
+  function start_lvl(&$output, $depth = 0, $args = array()) {
+    $output .= "\n<ul id=\"acc-". $this->current_item_id . "-collapse\" class=\"collapse dropdown-menu\">\n";
+  }
+
+  function start_el(&$output, $item, $depth = 0, $args = array(), $id = 0) {
+    $item_html = '';
+    parent::start_el($item_html, $item, $depth, $args);
+
+    if ($item->is_dropdown && ($depth === 0)) {
+      $item_html = preg_replace('/<a[^>]*>.*?<\/a>/iU', '<a>' . $item->title . '</a>', $item_html);
+      $item_html = str_replace('<a', '<a class="dropdown-toggle" data-toggle="collapse" data-target="#acc-' . sanitize_title($item->title) . '-collapse"', $item_html);
+      $item_html = str_replace('</a>', ' <b class="caret"></b></a>', $item_html);
+    }
+    elseif (stristr($item_html, 'li class="divider')) {
+      $item_html = preg_replace('/<a[^>]*>.*?<\/a>/iU', '', $item_html);
+    }
+    elseif (stristr($item_html, 'li class="dropdown-header')) {
+      $item_html = preg_replace('/<a[^>]*>(.*)<\/a>/iU', '$1', $item_html);
+    }
+
+    $item_html = apply_filters('roots_wp_nav_menu_item', $item_html);
+    $output .= $item_html;
+    apply_filters( 'walker_nav_menu_start_lvl', $item_html, $item, $depth, $args->myarg=$item->title );
+  }
+
+  function display_element($element, &$children_elements, $max_depth, $depth = 0, $args, &$output) {
+    $element->is_dropdown = ((!empty($children_elements[$element->ID]) && (($depth + 1) < $max_depth || ($max_depth === 0))));
+    $this->current_item_id = sanitize_title($element->title);
+
+    if ($element->is_dropdown) {
+      $element->classes[] = 'dropdown';
+    }
+    if ($element->current_item_parent || $element->current_item_ancestor || $element->current) {
+        $element->classes[] = 'open';
+    }
+    $post = get_post();
+    $terms = get_the_terms($post->id, 'store-section');
+    if(is_array($terms)) {
+        foreach($terms as $term) {
+            $term_link = get_term_link($term);
+            $term_link_parent = substr($term_link, 0, strrpos($term_link, '/', 0) + 1);
+            if($element->url == $term_link) {
+                $element->classes[] = 'active';
+            }
+            if($element->url == $term_link_parent) {
+                $element->classes[] = 'open';
+            }
+        }
+    }
+
+    parent::display_element($element, $children_elements, $max_depth, $depth, $args, $output);
+  }
+}
+
 /**
  * Remove the id="" on nav menu items
  * Return 'menu-slug' for nav menu classes
@@ -102,7 +159,7 @@ function roots_nav_menu_args($args = '') {
   }
 
   if (!$args['walker']) {
-    $roots_nav_menu_args['walker'] = new Roots_Nav_Walker();
+    $roots_nav_menu_args['walker'] = new Fik_Roots_Nav_Walker();
   }
 
   return array_merge($args, $roots_nav_menu_args);
