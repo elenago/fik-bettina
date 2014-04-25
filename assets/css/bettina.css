@@ -1005,9 +1005,12 @@ article.status-fik_checkout{
 	.navbar-nav{
 		float: none;
 	}
-	.home .sidebar{
+	.sidebar{
 		padding-left: 0;
 	} 
+	.home .dropdown-menu{
+		margin-left: -55px;
+	}
 	.titulo{
 	    padding: 0 !important;
 	    width: 150px;
