@@ -932,6 +932,10 @@ article.status-fik_checkout{
 		left: 2px;
     	position: relative;
 	}
+	.archive .navbar-nav {
+	    left: -24px;
+	    position: relative;
+	}
 	 .logovestido{
  		width: 18%;
     	margin-left: -30px;	
@@ -980,6 +984,9 @@ article.status-fik_checkout{
  	.widget form input {
 	    width: 87px;
 	}
+	.m-sidebar{
+	    padding-left: 15px;
+	}
  	.banner-bettina .social{
  		width: 16%;
  		padding: 0;
@@ -995,6 +1002,9 @@ article.status-fik_checkout{
 	.navbar-nav{
 		float: none;
 	}
+	.home .sidebar{
+		padding-left: 0;
+	} 
 	.titulo{
 	    padding: 0 !important;
 	    width: 150px;
@@ -1052,7 +1062,9 @@ article.status-fik_checkout{
 
 }
 @media screen and (max-width: 765px){
-
+	.img-responsive, .thumbnail > img, .thumbnail a > img, .carousel-inner > .item > img, .carousel-inner > .item > a > img{
+		width: 100%;
+	}
 	.navbar-collapse.collapse{
 		height: auto;
 		overflow: visible !important;
