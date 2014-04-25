@@ -925,7 +925,7 @@ article.status-fik_checkout{
 	    left: -6px;
 	}
 	.navbar-nav{
-		left: -24px;
+		left: 2px;
     	position: relative;
 	}
 	 .logovestido{
@@ -987,6 +987,9 @@ article.status-fik_checkout{
 		margin-right: 10px;
 		padding: 0;
 		width: 18%;
+	}
+	.navbar-nav{
+		float: none;
 	}
 	.titulo{
 	    padding: 0 !important;
