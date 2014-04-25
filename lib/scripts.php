@@ -13,6 +13,7 @@
 function roots_scripts() {
   wp_enqueue_style('roots_main', get_template_directory_uri() . '/assets/css/main.min.css', false, '9880649384aea9f1ee166331c0a30daa');
   wp_enqueue_style('roots_bettina', get_template_directory_uri() . '/assets/css/bettina.css', false, '9880649384aea9f1ee166331c0a30daa');
+  wp_enqueue_style('roots_bettina_slider', get_template_directory_uri() . '/../../mu-plugins/assets/css/fik-bootstrap-carousel.css');
   // jQuery is loaded using the same method from HTML5 Boilerplate:
   // Grab Google CDN's latest jQuery with a protocol relative URL; fallback to local if offline
   // It's kept in the header instead of footer to avoid conflicts with plugins.
