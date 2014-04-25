@@ -873,18 +873,21 @@ article.status-fik_checkout{
 	-moz-appearance: none;
 }*/
 #vv-tallas-vestidos, #vv-tallas-zapatos{
-	height: 42px !important;
-	width: 80px;
-	font-size: 15px !important;
-	padding-left: 15px !important;
-	-webkit-appearance: none;
-	-moz-appearance: none;
-	appearance: none;
-	border: 1px solid #dbdbdb;
-	font-weight: 700;
-	color: #6f6f6f;
-	background: url('../img/select-back.png') no-repeat center right #fff;
-	border-radius: 0;
+    width: 80px;
+    font-size: 15px !important;
+    padding-left: 15px !important;
+    padding-top: 12px !important;
+    padding-bottom: 12px !important;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: 1px solid #dbdbdb;
+    font-weight: 700;
+    color: #6f6f6f;
+    background: url('../img/select-back.png') no-repeat center right #fff;
+    border-radius: 0;
+    text-indent: 0.01px;
+    text-overflow: '';
 }
 /*.product-variations .controls:after{
 	width: 30px;
