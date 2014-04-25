@@ -1009,7 +1009,7 @@ article.status-fik_checkout{
 		padding-left: 0;
 	} 
 	.dropdown-menu{
-		margin-left: -55px;
+		margin-left: -55px !important;
 	}
 	.titulo{
 	    padding: 0 !important;
