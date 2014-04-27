@@ -165,4 +165,9 @@ jQuery(document).ready(function() {
     }
 
     jQuery("input[name='ns_widget_mailchimp_email']").attr("placeholder", "Email");
+
+    jQuery(".dropdown-toggle").click(function(e){
+        e.preventDefault();
+    }
+    );
 });
