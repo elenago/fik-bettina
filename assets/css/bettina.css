@@ -687,9 +687,10 @@ div.alert{
 }
 
 .fik_to_checkout .button {
-	background: #D6D7D8;
-	color: #929292;
-	text-transform: lowercase;
+    background: #D6D7D8;
+    color: #929292;
+    text-transform: lowercase;
+    border: none;
 }
 .fik_to_checkout .button:hover {
 	background: #D6D7D8;
