@@ -1426,3 +1426,7 @@ article.status-fik_checkout{
 #homearticle {
     padding-right: 0 !important;
 }
+
+.fik_add_cart .help-inline {
+    display: none;
+}
