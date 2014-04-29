@@ -1430,3 +1430,7 @@ article.status-fik_checkout{
 .fik_add_cart .help-inline {
     display: none;
 }
+
+.fik_add_cart .alert {
+    margin-bottom: 15px;
+}
