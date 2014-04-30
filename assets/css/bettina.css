@@ -4,9 +4,6 @@ body *{
 	color: #929292;
 	font-family: "Raleway";
 }
-body {
-    min-width: 380px;
-}
 p{
 	font-size: 13px;
 	color: #19161B;
