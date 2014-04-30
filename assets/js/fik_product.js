@@ -25,4 +25,6 @@ $(document).ready(function() {
   });
   $(":button[class='button alt btn btn-primary']").html('Añadir a la cesta');
   $("option[value='']").html('?');
+
+  $('.carousel').carousel();
 });
