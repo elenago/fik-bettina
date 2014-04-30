@@ -1430,6 +1430,7 @@ article.status-fik_checkout{
 
 .carousel-indicators .active {
     margin-left: 5px;
+    margin-top: 1px;
 }
 
 .carousel-control {
