@@ -646,6 +646,10 @@ div.alert{
     top: -50px;
 }
 
+.sizesandshippingsmodal .shippings {
+    top: -20px;
+}
+
 .sizesandshippingsmodaloverlay {
     position: absolute;
     width: 100%;
@@ -1434,6 +1438,7 @@ article.status-fik_checkout{
 
 .carousel-indicators .active {
     margin-left: 5px;
+    margin-top: 1px;
 }
 
 .carousel-control {
