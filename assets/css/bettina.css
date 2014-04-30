@@ -646,6 +646,10 @@ div.alert{
     top: -50px;
 }
 
+.sizesandshippingsmodal .shippings {
+    top: -20px;
+}
+
 .sizesandshippingsmodaloverlay {
     position: absolute;
     width: 100%;
