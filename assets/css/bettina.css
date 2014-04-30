@@ -220,7 +220,7 @@ a:hover, a:active{
 .sidebar .nav a{
 	font-size: 14px;
 }
-.navbar-nav > li.active > a, .navbar-nav > li.active > a:hover, .navbar-nav > li.active > a:focus{
+.navbar-default .navbar-nav > li.active > a, .navbar-nav > li.active > a:hover, .navbar-nav > li.active > a:focus{
 	background: transparent;
 	color: #a31127;
 }
@@ -260,14 +260,18 @@ a:hover, a:focus, .navbar-nav > li.active > a:hover{
 	color: #B6B7B8;
 	padding-right: 4px;
 }
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus,
+.navbar-default .navbar-nav > li > a:hover,
 .dropdown-menu > li > a:hover{
 	color: #a31127;
 	background: none !important;
 }
+.active,
 .dropdown-menu > .active > a{
 	background: transparent;
 	color: #a31127;
 }
+.active,
 .dropdown-menu > .active > a:hover, .dropdown-menu > .active > a:focus{
 	background: transparent;
 	color: #a31127;
@@ -691,9 +695,10 @@ div.alert{
 }
 
 .fik_to_checkout .button {
-	background: #D6D7D8;
-	color: #929292;
-	text-transform: lowercase;
+    background: #D6D7D8;
+    color: #929292;
+    text-transform: lowercase;
+    border: none;
 }
 .fik_to_checkout .button:hover {
 	background: #D6D7D8;
@@ -877,18 +882,21 @@ article.status-fik_checkout{
 	-moz-appearance: none;
 }*/
 #vv-tallas-vestidos, #vv-tallas-zapatos{
-	height: 42px !important;
-	width: 80px;
-	font-size: 15px !important;
-	padding-left: 15px !important;
-	-webkit-appearance: none;
-	-moz-appearance: none;
-	appearance: none;
-	border: 1px solid #dbdbdb;
-	font-weight: 700;
-	color: #6f6f6f;
-	background: url('../img/select-back.png') no-repeat center right #fff;
-	border-radius: 0;
+    width: 80px;
+    font-size: 15px !important;
+    padding-left: 15px !important;
+    padding-top: 12px !important;
+    padding-bottom: 12px !important;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: 1px solid #dbdbdb;
+    font-weight: 700;
+    color: #6f6f6f;
+    background: url('../img/select-back.png') no-repeat center right #fff;
+    border-radius: 0;
+    text-indent: 0.01px;
+    text-overflow: '';
 }
 /*.product-variations .controls:after{
 	width: 30px;
@@ -933,8 +941,12 @@ article.status-fik_checkout{
 	    left: -6px;
 	}
 	.navbar-nav{
-		left: -24px;
+		left: 2px;
     	position: relative;
+	}
+	.archive .navbar-nav {
+	    left: -24px;
+	    position: relative;
 	}
 	 .logovestido{
  		width: 18%;
@@ -984,6 +996,9 @@ article.status-fik_checkout{
  	.widget form input {
 	    width: 87px;
 	}
+	.m-sidebar{
+	    padding-left: 15px;
+	}
  	.banner-bettina .social{
  		width: 16%;
  		padding: 0;
@@ -996,6 +1011,12 @@ article.status-fik_checkout{
 		padding: 0;
 		width: 18%;
 	}
+	.navbar-nav{
+		float: none !important;
+	}
+	.sidebar{
+		padding-left: 0;
+	} 
 	.titulo{
 	    padding: 0 !important;
 	    width: 150px;
@@ -1013,8 +1034,7 @@ article.status-fik_checkout{
 		margin-top: 10px
 	}
 	.dropdown-menu{
-		margin-left: -70px;
-    	max-width: 160px;
+		margin-left: -55px;
     	text-align: right;
 	}
 	.dropdown-menu li{
@@ -1053,7 +1073,9 @@ article.status-fik_checkout{
 
 }
 @media screen and (max-width: 765px){
-
+	.img-responsive, .thumbnail > img, .thumbnail a > img, .carousel-inner > .item > img, .carousel-inner > .item > a > img{
+		width: 100%;
+	}
 	.navbar-collapse.collapse{
 		height: auto;
 		overflow: visible !important;
@@ -1412,4 +1434,12 @@ article.status-fik_checkout{
 
 #homearticle {
     padding-right: 0 !important;
+}
+
+.fik_add_cart .help-inline {
+    display: none;
+}
+
+.msgproduct .alert {
+    margin-bottom: 15px;
 }
