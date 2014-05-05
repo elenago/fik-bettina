@@ -79,7 +79,7 @@ class Fik_Roots_Nav_Walker extends Roots_Nav_Walker {
 
     if ($item->is_dropdown && ($depth === 0)) {
       $item_html = preg_replace('/<a[^>]*>.*?<\/a>/iU', '<a>' . $item->title . '</a>', $item_html);
-      $item_html = str_replace('<a', '<a class="dropdown-toggle" data-toggle="collapse" data-target="#acc-' . sanitize_title($item->title) . '-collapse"', $item_html);
+      $item_html = str_replace('<a', '<a class="dropdown-toggle" data-toggle="collapse" data-target="#acc-' . sanitize_title($item->title) . '-collapse" href="#"', $item_html);
       $item_html = str_replace('</a>', ' <b class="caret"></b></a>', $item_html);
     }
     elseif (stristr($item_html, 'li class="divider')) {

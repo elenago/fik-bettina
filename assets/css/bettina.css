@@ -347,6 +347,14 @@ a:hover, a:focus, .navbar-nav > li.active > a:hover{
 	padding-right: 10px;
 	padding-top: 15px;
 }
+#ns_widget_mailchimp_form-5 .error {
+	color: #a31127;
+}
+#ns_widget_mailchimp_form-5 label{
+	display: none !important;
+}
+
+
 /*Blog sidebar*/
 .widget.widget_search h3, .widget.widget_archive h3{
 	text-align: left;
@@ -638,6 +646,10 @@ div.alert{
     top: -50px;
 }
 
+.sizesandshippingsmodal .shippings {
+    top: -20px;
+}
+
 .sizesandshippingsmodaloverlay {
     position: absolute;
     width: 100%;
@@ -670,6 +682,14 @@ div.alert{
     padding-right: 6px;
 }
 
+tr.cart_item_row {
+border-top: 1px solid #929292;
+
+}
+
+
+
+
 .thumbnail{
 	border: none;
 	display: inline-block;
@@ -687,9 +707,10 @@ div.alert{
 }
 
 .fik_to_checkout .button {
-	background: #D6D7D8;
-	color: #929292;
-	text-transform: lowercase;
+    background: #D6D7D8;
+    color: #929292;
+    text-transform: lowercase;
+    border: none;
 }
 .fik_to_checkout .button:hover {
 	background: #D6D7D8;
@@ -1456,6 +1477,7 @@ article.status-fik_checkout{
 
 .carousel-indicators .active {
     margin-left: 5px;
+    margin-top: 1px;
 }
 
 .carousel-control {
@@ -1464,4 +1486,12 @@ article.status-fik_checkout{
 
 #homearticle {
     padding-right: 0 !important;
+}
+
+.fik_add_cart .help-inline {
+    display: none;
+}
+
+.msgproduct .alert {
+    margin-bottom: 15px;
 }
