@@ -85,7 +85,7 @@ a:hover, a:active{
     position: relative;
     top: -2px;
     background-color: transparent;
-    padding-right: 7px;
+    padding-right: 8px;
     line-height: 1.1;
     min-width: 30px;
     text-align: right;
@@ -1324,6 +1324,9 @@ article.status-fik_checkout{
 	.logobettina {
 	    width: 238px;
 	}
+	.contact .sblog{
+		display: none;
+	}
 }
 @media screen and (max-width: 432px){
 	.logovestido{
@@ -1333,6 +1336,41 @@ article.status-fik_checkout{
 	    width: 192px;
 	    padding-top: 0;
 	}
+	.carousel-indicators {
+    	left: 40% !important;
+    }
+    .fm-sidebar .widget .menu{
+    	padding-top: 20px;
+    	padding-left: 15px;
+    }
+    .fm-sidebar .widget .menu li.p-sidebar{
+    	width: 100%;
+    	padding-top: 0 !important;
+    }    
+    .fm-sidebar .widget .menu li.p-sidebar a{
+    	display: block;
+    	width: 100%;
+    	text-align: left;
+    }
+    .main .contentstatic .status-fik_checkout tbody tr td:first-child{
+    	display: none;
+    }
+    .main .contentstatic .status-fik_checkout thead tr th:first-child{
+    	display: none;
+    }
+    .zoomContainer{
+    	display: none;
+    }
+    .sizesandshippings{
+    	margin-top: 30px;
+    	width: 100%;
+    }
+    .sizesandshippings ul{
+    	padding-left: 15px;
+    }
+    .sizesandshippings ul li{
+    	text-align: left;
+    }
 }
 @media screen and (max-width: 360px){
 	.lang{
@@ -1374,6 +1412,7 @@ article.status-fik_checkout{
 	.archive .product-image-frame:hover .product-title {
 	    bottom: 240px;
 	}
+
 }
 .nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
     background-color: #FFFFFF !important;
