@@ -607,7 +607,7 @@ div.alert{
 	font-size: 18px;
 }
 
-.divprice {
+.divprice, .fik_to_checkout {
 	background: #D6D7D8;
 	padding: 8px;
 	border: none;
@@ -615,6 +615,10 @@ div.alert{
 	text-align: left;
 	position: relative;
 	display: block;
+}
+
+.fik_to_checkout {
+    text-align: right;
 }
 
 .sizesandshippings{
@@ -708,8 +712,7 @@ border-top: 1px solid #929292;
 
 .fik_to_checkout .button {
     background: #D6D7D8;
-    color: #929292;
-    text-transform: lowercase;
+    text-transform: uppercase;
     border: none;
 }
 .fik_to_checkout .button:hover {
@@ -853,18 +856,16 @@ article.status-fik_checkout{
 }
 .status-fik_checkout .fik_to_checkout .button{
 	border-radius: 0;
-	width: 100%;
-	position: absolute;
+	position: relative;
 	left: 0;
 	text-align: right;
-	color: #6E7072;
-	margin-bottom: 20px;
+	color: #444346;
 	border: none;
-	text-transform: lowercase;
+	text-transform: uppercase;
 }
 .status-fik_checkout .fik_to_checkout .button:hover{
 	color: #a31127;
-	text-transform: lowercase;
+	text-transform: uppercase;
 }
 
 .table > caption + thead > tr:first-child > th, .table > colgroup + thead > tr:first-child > th, .table > thead:first-child > tr:first-child > th, .table > caption + thead > tr:first-child > td, .table > colgroup + thead > tr:first-child > td, .table > thead:first-child > tr:first-child > td{
