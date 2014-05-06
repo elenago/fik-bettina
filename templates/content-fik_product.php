@@ -17,6 +17,9 @@
                        // the_post_thumbnail('post-thumbnail',array('data-zoom-image' => array_shift(array_values(wp_get_attachment_image_src( get_post_thumbnail_id(get_the_ID()), 'large' ))),'itemprop' => "image"));                
                     ?>
                     <?php the_post_thumbnail('460-thumbnail',array('class'=>'img-responsive', 'id'=>'prod-img', 'data-zoom-image' => array_shift(array_values(wp_get_attachment_image_src( get_post_thumbnail_id(get_the_ID()), 'full' ))))) ?>
+                    <div class="shareandfullsize">
+                        <img id="fullsizeicon" src="/wp-content/themes/fik-bettina/assets/img/fullsize.png"/>
+                    </div>
                 </div>
                 <?php 
                 // this function outputs a <ul> with class="product-image-thumbnails" where each <li> is a thumbnil that links to a biger image (sizes specified in function). 
@@ -31,8 +34,9 @@
             </header>
             <div itemprop="description" class="entry-content">
                 <?php echo $post->post_content; ?>
-
-                <?php the_product_gallery_thumbnails('150-thumbnail', array('class'=>'img-responsive'), 'full'); ?>
+                <div id="thumbnails-gallery">
+                    <?php the_product_gallery_thumbnails('150-thumbnail', array('class'=>'img-responsive'), 'full'); ?>
+                </div>
                 <?php wp_link_pages( array( 'before' => '<div class="page-links">' . __( 'Pages:', 'twentytwelve' ), 'after' => '</div>' ) ); ?>
             </div><!-- .entry-content -->
             <div class="price-and-purchase">

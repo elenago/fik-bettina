@@ -1495,3 +1495,14 @@ article.status-fik_checkout{
 .msgproduct .alert {
     margin-bottom: 15px;
 }
+
+/* Full size images */
+.shareandfullsize {
+    text-align: right;
+    margin-top: 5px;
+}
+
+.fancybox-close {
+    top: 20px !important;
+    right: 20px !important;
+}
