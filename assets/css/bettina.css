@@ -34,7 +34,6 @@ a:hover, a:active{
 a:focus, a:active, a:visited {
     outline: 0;
     text-decoration: none;
-    background: transparent;
 }
 .dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
     background: transparent;
