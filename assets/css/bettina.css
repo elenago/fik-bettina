@@ -31,7 +31,7 @@ ol li{
 a:hover, a:active{
 	text-decoration: none;
 }
-a:focus, a:active, a:visited, a:hover {
+a:focus, a:active, a:visited {
     outline: 0;
     text-decoration: none;
     background: transparent;
