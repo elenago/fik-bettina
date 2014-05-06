@@ -84,6 +84,8 @@ function roots_display_sidebar() {
      */
     array(
       'is_404',
+      'is_date',
+      'is_author',
       array('is_singular', array('post')),
       'is_home',
     ),
@@ -113,12 +115,12 @@ function roots_display_sidebar2() {
      */
     array(
       'is_404',
-      'is_archive',
       'is_page',
       'is_front_page',
       'is_front_page',
       array('is_singular', array('fik_product')),
       array('is_page', array('cart')),
+      array('is_post_type_archive', array('fik_product')),
     ),
     /**
      * Page template checks (via is_page_template())
