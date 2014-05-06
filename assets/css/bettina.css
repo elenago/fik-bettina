@@ -712,13 +712,14 @@ border-top: 1px solid #929292;
 
 .fik_to_checkout .button {
     background: #D6D7D8;
+    color: #444346;
     text-transform: uppercase;
     border: none;
 }
 .fik_to_checkout .button:hover {
 	background: #D6D7D8;
 	color: #a31127;
-	text-transform: lowercase;
+	text-transform: uppercase;
 }
 /*Zoom*/
 .zoomContainer .zoomWindowContainer .zoomWindow{
