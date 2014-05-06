@@ -31,7 +31,14 @@ ol li{
 a:hover, a:active{
 	text-decoration: none;
 }
-
+a:focus, a:active, a:visited, a:hover {
+    outline: 0;
+    text-decoration: none;
+    background: transparent;
+}
+.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
+    background: transparent;
+}
 .rojo-logo{
 	color: #a31127;
 }
@@ -1507,4 +1514,8 @@ article.status-fik_checkout{
 .fancybox-close {
     top: 20px !important;
     right: 20px !important;
+}
+
+button::-moz-focus-inner {
+    border: 0;
 }
