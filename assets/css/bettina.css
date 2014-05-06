@@ -1516,6 +1516,10 @@ article.status-fik_checkout{
     right: 20px !important;
 }
 
+.fancybox-close:hover {
+    background-image: url("../js/plugins/fancybox/fancybox_sprite.png");
+}
+
 button::-moz-focus-inner {
     border: 0;
 }
