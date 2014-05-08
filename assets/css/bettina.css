@@ -31,10 +31,9 @@ ol li{
 a:hover, a:active{
 	text-decoration: none;
 }
-a:focus, a:active, a:visited, a:hover {
+a:focus, a:active, a:visited {
     outline: 0;
     text-decoration: none;
-    background: transparent;
 }
 .dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
     background: transparent;
@@ -243,6 +242,15 @@ a:hover, a:focus, .navbar-nav > li.active > a:hover{
    padding-top: 0;
    padding-bottom: 0;
 }
+.widget-inner ul li {
+    display: block;
+}
+.widget-inner li {
+	text-align: left;
+}
+.widget-inner li a{
+	text-align: left;
+}
 .nav >li >a{
 	padding: 5px 10px;
 }
@@ -363,7 +371,7 @@ a:hover, a:focus, .navbar-nav > li.active > a:hover{
 
 
 /*Blog sidebar*/
-.widget.widget_search h3, .widget.widget_archive h3{
+.widget.widget_search h3, .widget.widget_archive h3, .widget.widget_tag_cloud h3{
 	text-align: left;
 }
 .widget.widget_archive{
@@ -386,6 +394,11 @@ a:hover, a:focus, .navbar-nav > li.active > a:hover{
     float: left;
     text-align: left;
     width: 100%;
+}
+.widget.widget_archive li{
+    text-align: left !important;
+    list-style-type: square !important;
+    display: list-item;
 }
 
 /*FOOTER*/
