@@ -1524,6 +1524,10 @@ article.status-fik_checkout{
     margin-top: 5px;
 }
 
+.shareandfullsize img {
+    width: 18px;
+}
+
 .fancybox-close {
     top: 20px !important;
     right: 20px !important;
