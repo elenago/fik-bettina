@@ -35,7 +35,7 @@
             <div itemprop="description" class="entry-content">
                 <?php echo $post->post_content; ?>
                 <div id="thumbnails-gallery">
-                    <?php the_product_gallery_thumbnails('150-thumbnail', array('class'=>'img-responsive'), 'full'); ?>
+                    <?php the_product_gallery_thumbnails('250-thumbnail', array('class'=>'img-responsive'), 'full'); ?>
                 </div>
                 <?php wp_link_pages( array( 'before' => '<div class="page-links">' . __( 'Pages:', 'twentytwelve' ), 'after' => '</div>' ) ); ?>
             </div><!-- .entry-content -->
