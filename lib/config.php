@@ -87,6 +87,7 @@ function roots_display_sidebar() {
       'is_date',
       'is_author',
       'is_tag',
+      'is_search',
       array('is_singular', array('post')),
       'is_home',
     ),
