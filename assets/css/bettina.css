@@ -1503,6 +1503,11 @@ article.status-fik_checkout{
 	}
 
 }
+@media screen and (max-width: 992px){
+    .shareandfullsize{
+        display: none;
+    }
+}
 .nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
     background-color: #FFFFFF !important;
 }

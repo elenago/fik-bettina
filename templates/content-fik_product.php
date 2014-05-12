@@ -21,7 +21,7 @@
                         <?php dynamic_sidebar('sidebar-shareproductmenu'); ?>
                     </div>
                     <div class="shareandfullsize">
-                        <img id="fullsizeicon" src="/wp-content/themes/fik-bettina/assets/img/fullsize.png"/>
+                        <a href="#"><img id="fullsizeicon" src="/wp-content/themes/fik-bettina/assets/img/fullsize.png"/></a>
                     </div>
                 </div>
                 <?php 
