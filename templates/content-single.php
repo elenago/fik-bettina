@@ -5,8 +5,11 @@
       <?php get_template_part('templates/entry-meta'); ?>
     </header>
     <div class="entry-content">
-      <?php the_post_thumbnail(); ?>
+      <div class="post-thumbnail">
+      <?php the_post_thumbnail('large', array('class'=>'attachment-large wp-post-image img-responsive blog-attachment')); ?>
+      </div> 
       <?php the_content(); ?>
+      <?php dynamic_sidebar('sidebar-shareproductmenu'); ?>
     </div>
     <footer>
       <?php wp_link_pages(array('before' => '<nav class="page-nav"><p>' . __('Pages:', 'roots'), 'after' => '</p></nav>')); ?>

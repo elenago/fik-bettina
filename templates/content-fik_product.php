@@ -17,6 +17,9 @@
                        // the_post_thumbnail('post-thumbnail',array('data-zoom-image' => array_shift(array_values(wp_get_attachment_image_src( get_post_thumbnail_id(get_the_ID()), 'large' ))),'itemprop' => "image"));                
                     ?>
                     <?php the_post_thumbnail('460-thumbnail',array('class'=>'img-responsive', 'id'=>'prod-img', 'data-zoom-image' => array_shift(array_values(wp_get_attachment_image_src( get_post_thumbnail_id(get_the_ID()), 'full' ))))) ?>
+                    <div class="shareproductmenu">
+                        <?php dynamic_sidebar('sidebar-shareproductmenu'); ?>
+                    </div>
                     <div class="shareandfullsize">
                         <img id="fullsizeicon" src="/wp-content/themes/fik-bettina/assets/img/fullsize.png"/>
                     </div>

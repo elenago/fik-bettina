@@ -399,6 +399,13 @@ a:hover, a:focus, .navbar-nav > li.active > a:hover{
     text-align: left !important;
     list-style-type: square !important;
     display: list-item;
+    font-size: 13px;
+}
+.widget.widget_archive li a{
+    text-decoration: underline;
+}
+.widget.widget_archive li:first-letter{
+	text-transform: uppercase;
 }
 
 /*FOOTER*/
@@ -527,16 +534,20 @@ div.alert{
 	-moz-box-shadow:none;
 }
 /*Post*/
-.post img{
+.single-fik_product .post img{
 		width: 100%;
 	height:100%;
 }
-.post h2{
-	font-size: 30px;
+.post h2 {
+    margin-left: 25px;
+}
+.post h2, .page-header h2{
+	font-size: 40px;
 	font-weight: lighter;
 	margin-bottom: 25px;
+    color: #444245;
 }
-.post h2:first-letter{
+.post h2:first-letter, .page-header h2:first-letter{
 	text-transform: uppercase;
 }
 .entry-summary{
@@ -558,6 +569,12 @@ div.alert{
 .single .post .entry-title{
 	padding-left: 25px;
 }
+.entry-title a{
+    color: #444245;
+}
+.entry-title a:hover{
+    color: #929292;
+}
 .cabsingle{
 	padding:0 25px 0;
 }
@@ -568,14 +585,32 @@ div.alert{
 	float: right;
 }
 .news-single h1{
-	font-size: 35px;
+	font-size: 40px;
     font-weight: lighter;
     text-transform: lowercase;
-    color: #808080;
+    color: #444245;
+}
+.post h2:first-letter, .post h1:first-letter {
+	text-transform: uppercase;
+}
+.blog-attachment{
+    width: 100%;
+}
+.tagcloud a{
+    font-size: 13px !important;
+    text-decoration: underline;
 }
 
 .avatar{
 	display: none;
+}
+.post-thumbnail, .imgpost{
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.imgpost img{
+    width: 100%;
 }
 
 /*Productos*/
@@ -691,6 +726,17 @@ div.alert{
 .fik_add_cart .button{
 	padding-top: 9px;
 	padding-right: 0;
+}
+.commentsubmit{
+    font-size: 16px;
+    border: none;
+    background: transparent;
+    color: #a31127;
+}
+.commentsubmit:hover{
+    border: none;
+    background: transparent;
+    color: #929292;
 }
 .button:hover {
     color: #a31127;
@@ -826,7 +872,7 @@ border-top: 1px solid #929292;
 }
 /*Producto*/
 
-.single .entry-content img{
+.single-fik_product .single .entry-content img{
 	float: left;
 	width: 100%;
 }
@@ -1519,6 +1565,10 @@ article.status-fik_checkout{
 }
 
 /* Full size images */
+.shareproductmenu {
+    float: left;
+}
+
 .shareandfullsize {
     text-align: right;
     margin-top: 5px;
@@ -1526,6 +1576,10 @@ article.status-fik_checkout{
 
 .shareandfullsize img {
     width: 18px;
+}
+
+li.tssw-item {
+    margin-top: 5px;
 }
 
 .fancybox-close {

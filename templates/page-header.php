@@ -1,7 +1,7 @@
-<?php if(!is_page('Home') && !is_post_type_archive('fik_product') && !is_front_page() && !is_home()): ?>
+<?php if(is_archive() && is_date()): ?>
 <div class="page-header">
-  <h1>
-    <?php //echo roots_title(); ?>
-  </h1>
+  <h2>
+    <?php echo str_replace('Archivos Mensuales: ', '', roots_title()); ?>
+  </h2>
 </div>
 <?php endif;?>
