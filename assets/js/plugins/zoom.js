@@ -1,7 +1,7 @@
 /**
 * zoom.js is a JS enabling magnifying glass effect on product images and gallery effect.
 */
-$(window).ready(bettinazoom);
+$(window).load(bettinazoom);
 $(window).resize(function(){$(".zoomContainer").remove(); bettinazoom();});
 
 function bettinazoom() {
