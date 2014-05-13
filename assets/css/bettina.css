@@ -1541,7 +1541,7 @@ article.status-fik_checkout{
 .carousel-indicators {
     bottom: -25px;
     top: auto !important;
-    left: 46% !important;
+    left: 46%;
 }
 
 .carousel-indicators li{
