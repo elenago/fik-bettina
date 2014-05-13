@@ -1636,3 +1636,17 @@ h3.fik-cart-empty {
 #comments p{
     margin-top: 10px;
 }
+.blog article,
+.archive article {
+    border-bottom: 1px dashed;
+    padding-bottom: 30px;
+    padding-top: 25px;
+}
+.blog article:first-child,
+.archive article:first-child {
+    padding-top: 0px;
+}
+.blog article:last-child,
+.archive article:last-child {
+    border-bottom: none;
+}
