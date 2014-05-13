@@ -6,7 +6,7 @@
     </header>
     <div class="entry-content">
       <div class="post-thumbnail">
-      <?php the_post_thumbnail('large', array('class'=>'attachment-large wp-post-image img-responsive blog-attachment')); ?>
+      <?php the_post_thumbnail('960-thumbnail', array('class'=>'attachment-large wp-post-image img-responsive blog-attachment')); ?>
       </div> 
       <?php the_content(); ?>
       <?php dynamic_sidebar('sidebar-shareproductmenu'); ?>
