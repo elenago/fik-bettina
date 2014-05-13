@@ -16,7 +16,7 @@
         <?php get_template_part('templates/entry-meta'); ?>
   </header>
   <div class="entry-content imgpost">
-      <?php the_post_thumbnail('460-thumbnail', array('class'=>'img-responsive')); ?>
+      <?php the_post_thumbnail('960-thumbnail', array('class'=>'img-responsive')); ?>
   </div>
   <div class="entry-summary">
     <?php the_excerpt(); ?>

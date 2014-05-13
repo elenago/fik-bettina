@@ -40,6 +40,7 @@ remove_action('wp_footer', 'fik_legal_terms_link', 100);
 add_theme_support( 'post-thumbnails' );
 
 function bettina_thumb() {
+    add_image_size('960-thumbnail', 960);
     add_image_size('460-thumbnail', 460, 9999, false); //square thumbnail
     add_image_size('250-thumbnail', 250, 9999, false); //square thumbnail
 }
