@@ -1414,6 +1414,9 @@ article.status-fik_checkout{
     .cart_image{
         display: none;
     }
+    #commentform textarea.form-control{
+        width: 300px !important;
+    }
 }
 @media screen and (max-width: 515px){
 	.logovestido{
