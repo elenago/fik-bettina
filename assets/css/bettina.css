@@ -1640,13 +1640,10 @@ h3.fik-cart-empty {
 .archive article {
     border-bottom: 1px dashed;
     padding-bottom: 30px;
-    padding-top: 25px;
-}
-.blog article:first-child,
-.archive article:first-child {
-    padding-top: 0px;
+    margin-bottom: 30px;
 }
 .blog article:last-child,
 .archive article:last-child {
-    border-bottom: none;
+    border-bottom: 0px;
+    margin-bottom: 0px;
 }
