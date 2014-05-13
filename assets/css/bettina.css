@@ -14,7 +14,6 @@ li{
 h1{
 	font-size: 15px;
 	color: #a31127;
-	text-transform: uppercase;
 }
 h2{
 	color: #a31127;
@@ -587,8 +586,8 @@ div.alert{
 .news-single h1{
 	font-size: 40px;
     font-weight: lighter;
-    text-transform: lowercase;
     color: #444245;
+    margin-bottom: 25px;
 }
 .post h2:first-letter, .post h1:first-letter {
 	text-transform: uppercase;
