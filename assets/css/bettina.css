@@ -587,11 +587,14 @@ div.alert{
 .cabsingle p{
 	float: right;
 }
-.news-single h1{
+.news-single h1, .comment-title{
 	font-size: 40px;
     font-weight: lighter;
     color: #444245;
     margin-bottom: 25px;
+}
+.comment-number{
+    font-size: 35px;
 }
 .post h2:first-letter, .post h1:first-letter {
 	text-transform: uppercase;
@@ -1614,4 +1617,19 @@ button::-moz-focus-inner {
 
 h3.fik-cart-empty {
     margin-top: 40px;
+}
+#commentform label{
+    font-weight: normal !important;
+}
+#commentform .form-control{
+    width: 300px;
+}
+#commentform textarea.form-control{
+    width: 500px;
+}
+#comments h4{
+    font-size: 14px;
+}
+#comments p{
+    margin-top: 10px;
 }
