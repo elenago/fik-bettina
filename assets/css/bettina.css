@@ -8,6 +8,10 @@ p{
 	font-size: 13px;
 	color: #19161B;
 }
+.blog .entry-summary p, .single-post.entry-content{
+    font-size: 16px;
+	color: #19161B;
+}
 li{
 	list-style: none;
 }
