@@ -9,9 +9,9 @@
       <?php the_post_thumbnail('960-thumbnail', array('class'=>'attachment-large wp-post-image img-responsive blog-attachment')); ?>
       </div> 
       <?php the_content(); ?>
-      <?php dynamic_sidebar('sidebar-shareproductmenu'); ?>
     </div>
     <footer>
+      <?php dynamic_sidebar('sidebar-shareproductmenu'); ?>
       <?php wp_link_pages(array('before' => '<nav class="page-nav"><p>' . __('Pages:', 'roots'), 'after' => '</p></nav>')); ?>
     </footer>
     <?php comments_template('/templates/comments.php'); ?>
