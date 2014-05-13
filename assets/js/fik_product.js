@@ -28,6 +28,8 @@ $(document).ready(function() {
   }
   $("option[value='']").html('?');
   $(".search-submit").html('buscar');
+  $("h3:contains('Tu carrito de la compra está vacío')").html('Tu cesta de la compra está vacía. Visita <a href="/" style="text-decoration:underline">la tienda</a> y añade unos cuantos productos.');
+  $("p:contains('Visita la tienda y')").hide();
 
   $('.carousel').carousel();
 });
