@@ -1608,3 +1608,7 @@ li.tssw-item {
 button::-moz-focus-inner {
     border: 0;
 }
+
+h3.fik-cart-empty {
+    margin-top: 40px;
+}
