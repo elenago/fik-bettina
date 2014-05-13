@@ -20,7 +20,8 @@
   </div>
   <div class="entry-summary">
     <?php the_excerpt(); ?>
-    <a class="verpost col-sm-offset-11" href="<?php the_permalink(); ?>">Ver post</a>
+    <a class="verpost" href="<?php the_permalink(); ?>">Ver post</a>
+    <?php dynamic_sidebar('sidebar-shareproductmenu'); ?>
   </div>
 </article>
 

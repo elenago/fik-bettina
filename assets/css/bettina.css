@@ -12,6 +12,9 @@ p{
     font-size: 16px;
 	color: #19161B;
 }
+.entry-summary p{
+    margin-bottom: 25px;
+}
 li{
 	list-style: none;
 }
@@ -572,6 +575,7 @@ div.alert{
 .verpost{
 	color: #19161B;
 	text-decoration: underline;
+    float: right;
 }
 .pager li > a, .pager li > a:hover{
 	background: transparent;
