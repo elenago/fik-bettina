@@ -170,36 +170,49 @@ a:focus, a:active, a:visited {
 	height: 22px;
 	border-radius: 0;
 }
-.social .face a, .social1 .face a{
+.tssw-item span.tssw-icon {
+    background: url("../img/bg-social.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    height: 22px;
+    width: 22px;
+}
+.shareproductmenu ul.tssw-list {
+    margin: 5px -2px;
+}
+.tssw-list li.tssw-item {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.social .face a, .social1 .face a, .tssw-item span.tssw-facebook:hover{
 	background-position:-2px 0;
 }
-.social .twitter a, .social1 .twitter a{
+.social .twitter a, .social1 .twitter a, .tssw-item span.tssw-twitter:hover{
 	background-position:-23px 0;
 }
-.social .instagram a,.social1 .instagram a{
+.social .instagram a,.social1 .instagram a, .tssw-item span.tssw-instagram:hover{
 	background-position:-44px 0;
 }
-.social .pinterest a,.social1 .pinterest a{
+.social .pinterest a,.social1 .pinterest a, .tssw-item span.tssw-pinterest:hover{
 	background-position:-65px 0;
 }
-.social .gplus a, .social1 .gplus a{
+.social .gplus a, .social1 .gplus a, .tssw-item span.tssw-gplus:hover{
 	background-position:-86px 0;
 }
 
 
-.social .face a:hover, .social1 .face a:hover{
+.social .face a:hover, .social1 .face a:hover, .tssw-item span.tssw-facebook{
 	background-position:-2px -23px;
 }
-.social .twitter a:hover, .social1 .twitter a:hover{
+.social .twitter a:hover, .social1 .twitter a:hover, .tssw-item span.tssw-twitter{
 	background-position:-23px -23px ;
 }
-.social .instagram a:hover, .social1 .instagram a:hover{
+.social .instagram a:hover, .social1 .instagram a:hover, .tssw-item span.tssw-instagram{
 	background-position:-44px -23px;
 }
-.social .pinterest a:hover, .social1 .pinterest a:hover{
+.social .pinterest a:hover, .social1 .pinterest a:hover, .tssw-item span.tssw-pinterest{
 	background-position:-65px -23px;
 }
-.social .gplus a:hover, .social1 .gplus a:hover{
+.social .gplus a:hover, .social1 .gplus a:hover, .tssw-item span.tssw-gplus{
 	background-position:-86px -23px;
 }
 
