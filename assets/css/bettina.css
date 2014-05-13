@@ -1405,6 +1405,9 @@ article.status-fik_checkout{
 		width: auto;
 		display: inline;
 	}
+    .cart_image{
+        display: none;
+    }
 }
 @media screen and (max-width: 515px){
 	.logovestido{
@@ -1501,6 +1504,12 @@ article.status-fik_checkout{
 	.archive .product-image-frame:hover .product-title {
 	    bottom: 240px;
 	}
+    .cesta {
+        clear: both;
+    }
+    .banner-bettina.container {
+        margin-top: 75px;
+    }
 
 }
 @media screen and (max-width: 992px){
