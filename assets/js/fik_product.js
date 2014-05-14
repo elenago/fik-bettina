@@ -32,4 +32,16 @@ $(document).ready(function() {
   $("p.fik-cart-empty").hide();
 
   $('.carousel').carousel();
+
+  if(window.location.pathname == '/nuestra-tienda/') {
+      $("li.nuestratienda a").addClass("active");
+  } else {
+      $("li.nuestratienda a").removeClass("active");
+  }
+
+  if(window.location.pathname == '/mas-informacion/') {
+      $("li.masinformacion a").addClass("active");
+  } else {
+      $("li.masinformacion a").removeClass("active");
+  }
 });
