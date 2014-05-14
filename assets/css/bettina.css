@@ -39,7 +39,6 @@ ol li{
 }
 .sizes ul li, .shippings ul li{
     list-style: disc;
-    font-size: 13px;
 }
 a:hover, a:active{
 	text-decoration: none;
