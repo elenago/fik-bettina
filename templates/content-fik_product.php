@@ -58,7 +58,7 @@
                 <div class="panel-body">
                     <button type="button" class="close">&times;</button>
                     <?php
-                        $shipping_page = get_page_by_title('Envío');
+                        $shipping_page = get_page_by_title('Guía de tallas');
                         echo $shipping_page->post_content;
                     ?>
                 </div>
@@ -67,7 +67,7 @@
                 <div class="panel-body">
                     <button type="button" class="close">&times;</button>
                     <?php
-                        $shipping_page = get_page_by_title('Guía de tallas');
+                        $shipping_page = get_page_by_title('Envío');
                         echo $shipping_page->post_content;
                     ?>
                 </div>
