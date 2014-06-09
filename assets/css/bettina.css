@@ -1471,6 +1471,9 @@ article.status-fik_checkout{
 	.contact .sblog{
 		display: none;
 	}
+	.contact .sblogbar{
+		display: none;
+	}
 }
 @media screen and (max-width: 432px){
 	.logovestido{
