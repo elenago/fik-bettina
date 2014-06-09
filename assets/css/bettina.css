@@ -37,6 +37,10 @@ ol li{
 input[type=number] {
     -moz-appearance:textfield;
 }
+.form-control:focus {
+    border-color: #A31127;
+    box-shadow: none;
+}
 .page ul li{
 	list-style: disc;
 	padding: 5px 0;
