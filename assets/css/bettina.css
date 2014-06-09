@@ -30,6 +30,9 @@ ol li{
 	list-style: decimal;
 	padding: 5px 0;
 }
+input[type=number] {
+    -moz-appearance:textfield;
+}
 .page ul li{
 	list-style: disc;
 	padding: 5px 0;
