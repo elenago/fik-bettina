@@ -37,6 +37,10 @@ ol li{
 input[type=number] {
     -moz-appearance:textfield;
 }
+.form-control {
+    border-radius: 0px;
+    border-color: #444245;
+}
 .form-control:focus {
     border-color: #A31127;
     box-shadow: none;
@@ -407,6 +411,9 @@ a:hover, a:focus, .navbar-nav > li.active > a:hover{
 
 
 /*Blog sidebar*/
+.search-field {
+    width: 150px !important;
+}
 .widget.widget_search h3, .widget.widget_archive h3, .widget.widget_tag_cloud h3{
 	text-align: left;
 }
@@ -1659,7 +1666,7 @@ h3.fik-cart-empty {
     font-weight: normal !important;
 }
 #commentform .form-control{
-    width: 300px;
+    width: 175px;
 }
 #commentform textarea.form-control{
     width: 500px;
