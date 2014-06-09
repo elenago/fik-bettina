@@ -206,7 +206,9 @@ a:focus, a:active, a:visited {
     margin: 0 !important;
     padding: 0 !important;
 }
-
+li.tssw-item {
+    width: 28px !important;
+}
 .social .face a, .social1 .face a, .tssw-item span.tssw-facebook:hover{
 	background-position:-2px 0;
 }
