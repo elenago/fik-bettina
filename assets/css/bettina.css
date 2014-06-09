@@ -639,6 +639,9 @@ div.alert{
 .comment-number{
     font-size: 35px;
 }
+.authorcomment{
+	color: #a31127;
+}
 .post h2:first-letter, .post h1:first-letter {
 	text-transform: uppercase;
 }
