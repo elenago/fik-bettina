@@ -48,9 +48,11 @@ function bettina_thumb() {
 add_action('after_setup_theme','bettina_thumb');
 
 function filter_search($query) {
+    if(!$query->is_admin) {
         if ($query->is_search) {
                 $query->set('post_type', array('post'));
                     };
             return $query;
+    }
 };
 add_filter('pre_get_posts', 'filter_search');
