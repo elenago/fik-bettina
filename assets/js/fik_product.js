@@ -28,7 +28,7 @@ $(document).ready(function() {
   }
   $("option[value='']").html('?');
   $(".search-submit").html('buscar');
-  $("h3.fik-cart-empty").html('Tu cesta de la compra está vacía.<br/><br/>Visita <a href="/" style="text-decoration:underline">la tienda</a> y añade unos cuantos productos.');
+  $("h3.fik-cart-empty").html('Tu cesta de la compra está vacía.');
   $("p.fik-cart-empty").hide();
 
   $('.carousel').carousel();
