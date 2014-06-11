@@ -28,8 +28,6 @@ $(document).ready(function() {
   }
   $("option[value='']").html('?');
   $(".search-submit").html('buscar');
-  $("h3.fik-cart-empty").html('Tu cesta de la compra está vacía.');
-  $("p.fik-cart-empty").hide();
 
   $('.carousel').carousel();
 

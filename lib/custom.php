@@ -56,3 +56,45 @@ function filter_search($query) {
     }
 };
 add_filter('pre_get_posts', 'filter_search');
+
+function cart_select_variation_error_message($message)
+{
+    return str_replace('al carrito', 'a la cesta', $message); 
+}
+add_filter('cart_select_variation_error_message', 'cart_select_variation_error_message');
+
+function cart_remove_item_message($message)
+{
+    return str_replace('carrito', 'cesta', $message); 
+}
+add_filter('cart_remove_item_message', 'cart_remove_item_message');
+
+function cart_update_item_message($message)
+{
+    return str_replace('al carrito', 'a la cesta', $message); 
+}
+//add_filter('cart_update_item_message', 'cart_update_item_message');
+
+function cart_add_item_message($message)
+{
+    return str_replace('carrito', 'cesta', $message); 
+}
+add_filter('cart_add_item_message', 'cart_add_item_message');
+
+function cart_empty_message($message)
+{
+    return '<h3>Tu cesta de la compra está vacía</h3>'; 
+}
+add_filter('cart_empty_message', 'cart_empty_message');
+
+function cart_remove_by_not_exist_error_message($message)
+{
+    return str_replace('carrito', 'cesta', $message); 
+}
+add_filter('cart_remove_by_not_exist_error_message', 'cart_remove_by_not_exist_error_message');
+
+function cart_not_more_stock_message($message)
+{
+    return str_replace('carrito', 'cesta', $message); 
+}
+//add_filter('cart_remove_by_not_exist_error_message', 'cart_remove_by_not_exist_error_message');
