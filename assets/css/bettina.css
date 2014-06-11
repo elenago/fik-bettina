@@ -1063,7 +1063,10 @@ article.status-fik_checkout{
 	margin-left: -78px;
 	padding-right: 0;
 }
-
+.navigation{
+    overflow: hidden;
+    margin: 25px -25px;
+}
 /*MEDIA QUERIES*/
 
 @media screen and (min-width: 992px){
@@ -1205,7 +1208,9 @@ article.status-fik_checkout{
 		width: auto;
 		display: inline;
 	}
-
+    .navigation{
+        margin: 25px 0px;
+    }
 }
 @media screen and (max-width: 765px){
 	.img-responsive, .thumbnail > img, .thumbnail a > img, .carousel-inner > .item > img, .carousel-inner > .item > a > img{
@@ -1466,6 +1471,9 @@ article.status-fik_checkout{
     #commentform textarea.form-control{
         width: 300px !important;
     }
+    .navigation{
+        margin: 25px 0px;
+    }
 }
 @media screen and (max-width: 515px){
 	.logovestido{
@@ -1480,9 +1488,6 @@ article.status-fik_checkout{
 	.contact .sblogbar{
 		display: none;
 	}
-    .navigation{
-        margin: 25px 0px;
-    }
 }
 @media screen and (max-width: 432px){
 	.logovestido{
@@ -1719,8 +1724,4 @@ h3.fik-cart-empty {
 }
 .sizesandshippingsmodal td{
     border-top: 1px solid #DDDDDD;
-}
-.navigation{
-    overflow: hidden;
-    margin: 25px -25px;
 }
