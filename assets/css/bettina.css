@@ -1721,5 +1721,6 @@ h3.fik-cart-empty {
     border-top: 1px solid #DDDDDD;
 }
 .navigation{
+    overflow: hidden;
     margin: 25px -25px;
 }
