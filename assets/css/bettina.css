@@ -1480,6 +1480,9 @@ article.status-fik_checkout{
 	.contact .sblogbar{
 		display: none;
 	}
+    .navigation{
+        margin: 25px 0px;
+    }
 }
 @media screen and (max-width: 432px){
 	.logovestido{
@@ -1716,4 +1719,7 @@ h3.fik-cart-empty {
 }
 .sizesandshippingsmodal td{
     border-top: 1px solid #DDDDDD;
+}
+.navigation{
+    margin: 25px -25px;
 }
