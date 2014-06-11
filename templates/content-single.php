@@ -13,6 +13,10 @@
     <footer>
       <?php dynamic_sidebar('sidebar-shareproductmenu'); ?>
       <?php wp_link_pages(array('before' => '<nav class="page-nav"><p>' . __('Pages:', 'roots'), 'after' => '</p></nav>')); ?>
+      <div class="navigation">
+          <div class="alignleft rojo-logo"><?php previous_post_link('< %link') ?></div>
+          <div class="alignright rojo-logo"><?php next_post_link('%link >') ?></div>
+      </div>
     </footer>
     <?php comments_template('/templates/comments.php'); ?>
   </article>

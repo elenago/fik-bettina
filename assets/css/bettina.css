@@ -68,6 +68,12 @@ a:focus, a:active, a:visited {
 .rojo-logo{
 	color: #a31127;
 }
+.rojo-logo a{
+	color: #a31127;
+}
+.rojo-logo a:hover, .rojo-logo:hover{
+	color: #929292;
+}
 .may{
 	text-transform: uppercase;
 }
