@@ -87,11 +87,11 @@ function cart_empty_message($message)
 }
 add_filter('cart_empty_message', 'cart_empty_message');
 
-function cart_remove_by_not_exist_error_message($message)
+function cart_remove_by_not_exists_error_message($message)
 {
-    return str_replace('carrito', 'cesta', $message); 
+    return str_replace('tu carrito', 'tu cesta', str_replace('el carrito', 'la cesta', $message)); 
 }
-add_filter('cart_remove_by_not_exist_error_message', 'cart_remove_by_not_exist_error_message');
+add_filter('cart_remove_by_not_exists_error_message', 'cart_remove_by_not_exists_error_message');
 
 function cart_not_more_stock_message($message)
 {
