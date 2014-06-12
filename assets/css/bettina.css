@@ -693,7 +693,6 @@ div.alert{
 	font-size: 15px !important;
 	padding-left: 15px !important;
 	-webkit-appearance: none;
-	-moz-appearance: none;
 	appearance: none;
 	border: 1px solid #dbdbdb;
 }
@@ -1023,7 +1022,7 @@ article.status-fik_checkout{
     padding-top: 12px !important;
     padding-bottom: 12px !important;
     -webkit-appearance: none;
-    -moz-appearance: none;
+    -moz-appearance: treeview;
     appearance: none;
     border: 1px solid #dbdbdb;
     font-weight: 700;
