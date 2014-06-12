@@ -695,6 +695,7 @@ div.alert{
 	-webkit-appearance: none;
 	appearance: none;
 	border: 1px solid #dbdbdb;
+    border-radius: 0;
 }
 .control-label{
 	margin-right: 10px;
