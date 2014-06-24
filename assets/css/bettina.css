@@ -444,8 +444,9 @@ a:hover, a:focus, .navbar-nav > li.active > a:hover{
 }
 .widget.widget_archive li{
     text-align: left !important;
-    list-style-type: square !important;
+    background: url('../img/bullet.png') no-repeat left center;
     display: list-item;
+    padding-left: 10px;
     font-size: 13px;
 }
 .widget.widget_archive li a{
@@ -468,10 +469,10 @@ a:hover, a:focus, .navbar-nav > li.active > a:hover{
 }
 .widget ul{
 	margin: 0;
+    padding-left: 20px;
 }
 .m-sidebar .widget li{
 	text-align: right;
-	padding: 5px 0; 
 }
 .widget .active a{
 	color: grey;
