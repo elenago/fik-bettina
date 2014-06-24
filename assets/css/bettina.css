@@ -351,10 +351,6 @@ a:hover, a:focus, .navbar-nav > li.active > a:hover{
 .widget .menu li:first-child{
 	padding-right: 0;
 }
-
-.m-sidebar{
-	margin-top: 50px;
-}
 .fm-sidebar{
 	display: none;
 }
